@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { tools, categories } from '@/lib/tools';
+import { tools, categories, generateFAQs, getRelatedTools, getAlternatives, getPricingLabel, outboundLink } from '@/lib/tools';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
   return {
-    title: `${tool.name} AI 工具评测 - 功能、定价与优缺点 | STYK Ai`,
-    description: `${tool.name} AI 工具完整评测：${tool.shortDesc}。包含功能介绍、使用案例、优缺点分析。`,
+    title: `${tool.name} AI 工具评测 - 功能、定价与优缺点 (${tool.score}/10) | STYK Ai`,
+    description: `${tool.name} AI 工具完整评测：${tool.shortDesc}。包含功能介绍、使用案例、优缺点分析、定价信息。评分 ${tool.score}/10。`,
     openGraph: {
-      title: `${tool.name} AI 工具评测`,
-      description: tool.shortDesc,
+      title: `${tool.name} AI 工具评测 - ${tool.score}/10`,
+      description: `${tool.shortDesc}。优缺点：${tool.prosCons.pros.slice(0, 2).join('、')}。`,
     },
   };
 }
@@ -26,10 +26,12 @@ export default async function ToolPage({ params }: Props) {
 
   const cat = categories.find(c => c.id === tool.category);
   const relatedByCategory = tools.filter(t => t.category === tool.category && t.id !== tool.id).slice(0, 4);
-  const alternatives = [...tools]
-    .filter(t => t.id !== tool.id)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3);
+  const relatedTools = getRelatedTools(tool, 4);
+  const alternatives = getAlternatives(tool, 3);
+  const faqs = generateFAQs(tool);
+  const officialLink = outboundLink(tool.officialUrl || tool.url, `${tool.name} 官网`);
+  const freeTrialLink = outboundLink(tool.url, `${tool.name} 免费试用`);
+  const pricingLink = outboundLink(tool.officialUrl || tool.url, `${tool.name} 定价`);
 
   const pricingMap: Record<string, { label: string; color: string }> = {
     free: { label: '免费', color: 'text-green-400 bg-green-500/10 border border-green-500/20' },
@@ -106,26 +108,22 @@ export default async function ToolPage({ params }: Props) {
           {/* CTA Buttons (Conversion Points) */}
           <div className="flex flex-wrap gap-3 mb-10">
             <a
-              href={tool.officialUrl || tool.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...officialLink}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-black font-bold rounded-xl transition shadow-lg shadow-cyan-500/20"
             >
-              🚀 访问官方网站
+              🚀 访问 {tool.name} 官网
             </a>
             <a
-              href={tool.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...freeTrialLink}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium rounded-xl transition border border-gray-700"
             >
-              🔗 开始免费试用
+              🔗 免费试用
             </a>
             <a
-              href={`/category/${tool.category}`}
+              {...pricingLink}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900/50 hover:bg-gray-800 text-gray-400 font-medium rounded-xl transition border border-gray-800"
             >
-              📂 同类工具
+              💰 查看定价
             </a>
           </div>
 
@@ -198,25 +196,27 @@ export default async function ToolPage({ params }: Props) {
               {/* Conversion Panel */}
               <div className="card-base p-6 gradient-border">
                 <h3 className="text-sm font-bold text-gray-300 mb-4 uppercase tracking-wider">
-                  立即开始
+                  立即体验
                 </h3>
                 <div className="space-y-3">
                   <a
-                    href={tool.officialUrl || tool.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    {...officialLink}
                     className="block w-full py-3 text-center bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl transition"
                   >
                     🚀 开始使用 {tool.name}
                   </a>
                   <a
-                    href={tool.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    {...freeTrialLink}
                     className="block w-full py-3 text-center bg-gray-800 hover:bg-gray-700 text-gray-200 rounded-xl transition border border-gray-700"
                   >
                     🔗 免费试用
                   </a>
+                  <Link
+                    href={`/tools/${tool.id}/review`}
+                    className="block w-full py-3 text-center bg-gray-900 hover:bg-gray-800 text-gray-400 rounded-xl transition border border-gray-800"
+                  >
+                    📝 查看详细评测
+                  </Link>
                   <a
                     href={`/submit`}
                     className="block w-full py-3 text-center text-sm text-gray-500 hover:text-gray-300 transition"
@@ -302,14 +302,96 @@ export default async function ToolPage({ params }: Props) {
             </section>
           )}
 
-          {/* Related Tools */}
-          {relatedByCategory.length > 0 && (
+          {/* Why Choose */}
+          <section className="mt-12 card-base p-6 gradient-border">
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span>💡</span> 为什么选择 {tool.name}？
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="p-4 bg-gray-800/50 rounded-lg">
+                <div className="text-2xl mb-2">🎯</div>
+                <h3 className="text-sm font-bold text-gray-200 mb-1">精准匹配需求</h3>
+                <p className="text-xs text-gray-400">{tool.name} 擅长 {tool.useCases.slice(0, 2).join('、')}，能够精准满足你的核心需求。</p>
+              </div>
+              <div className="p-4 bg-gray-800/50 rounded-lg">
+                <div className="text-2xl mb-2">⭐</div>
+                <h3 className="text-sm font-bold text-gray-200 mb-1">优秀评分 {tool.score}/10</h3>
+                <p className="text-xs text-gray-400">{tool.name} 获得高分评价。核心优势包括 {tool.prosCons.pros.slice(0, 2).join('、')}。</p>
+              </div>
+              <div className="p-4 bg-gray-800/50 rounded-lg">
+                <div className="text-2xl mb-2">💪</div>
+                <h3 className="text-sm font-bold text-gray-200 mb-1">广泛应用场景</h3>
+                <p className="text-xs text-gray-400">适用于 {tool.useCases.slice(0, 4).join('、')} 等多个场景，满足不同使用需求。</p>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          {faqs.length > 0 && (
             <section className="mt-10">
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <span>📂</span> 同类工具推荐
+                <span>❓</span> 关于 {tool.name} 的常见问题
               </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {relatedByCategory.map(r => (
+              <div className="space-y-3">
+                {faqs.map((faq, i) => (
+                  <details key={i} className="card-base group open:border-cyan-500/30 transition-colors">
+                    <summary className="p-4 cursor-pointer flex items-center justify-between text-sm font-medium text-gray-200 hover:text-cyan-400 transition-colors select-none">
+                      <span>{faq.q}</span>
+                      <svg className="w-4 h-4 text-gray-500 group-open:rotate-180 transition-transform shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div className="px-4 pb-4 text-sm text-gray-400 leading-relaxed border-t border-gray-800 pt-3">
+                      {faq.a}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Alternatives Section */}
+          {alternatives.length > 0 && (
+            <section className="mt-12">
+              <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <span>🔄</span> {tool.name} 替代工具推荐
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {alternatives.map(alt => (
+                  <Link
+                    key={alt.id}
+                    href={`/tools/${alt.id}`}
+                    className="card-base p-4 group"
+                  >
+                    <h3 className="font-semibold group-hover:text-cyan-400 transition-colors">
+                      {alt.name}
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1 line-clamp-2">{alt.shortDesc}</p>
+                    {alt.score && (
+                      <div className="flex items-center gap-1 mt-2">
+                        <span className="text-yellow-400 text-xs">★</span>
+                        <span className="text-xs text-gray-500">{alt.score.toFixed(1)}</span>
+                      </div>
+                    )}
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-3 text-center">
+                <Link href={`/tools/${tool.id}/alternatives`} className="text-sm text-cyan-500 hover:text-cyan-400 transition-colors">
+                  查看全部 {tool.name} 替代方案 →
+                </Link>
+              </div>
+            </section>
+          )}
+
+          {/* Related Tools */}
+          {relatedTools.length > 0 && (
+            <section className="mt-10">
+              <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <span>📂</span> 相关工具推荐
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {relatedTools.map(r => (
                   <Link
                     key={r.id}
                     href={`/tools/${r.id}`}
@@ -319,11 +401,41 @@ export default async function ToolPage({ params }: Props) {
                       {r.name}
                     </h3>
                     <p className="text-xs text-gray-500 mt-1 line-clamp-2">{r.shortDesc}</p>
+                    {r.score && (
+                      <div className="flex items-center gap-1 mt-2">
+                        <span className="text-yellow-400 text-xs">★</span>
+                        <span className="text-xs text-gray-500">{r.score.toFixed(1)}</span>
+                      </div>
+                    )}
                   </Link>
                 ))}
               </div>
             </section>
           )}
+
+          {/* Internal Links */}
+          <section className="mt-10 border-t border-gray-800 pt-8">
+            <h2 className="text-lg font-bold mb-4">🔗 探索更多相关内容</h2>
+            <div className="flex flex-wrap gap-3">
+              <Link href={`/tools/${tool.id}/review`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
+                📝 {tool.name} 详细评测
+              </Link>
+              <Link href={`/tools/${tool.id}/alternatives`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
+                🔄 {tool.name} 替代品
+              </Link>
+              <Link href={`/tools/${tool.id}/best-for`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
+                🎯 {tool.name} 最佳场景
+              </Link>
+              {cat && (
+                <Link href={`/category/${cat.id}`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
+                  📂 更多 {cat?.name} 工具
+                </Link>
+              )}
+              <Link href="/seo/best-ai-tools" className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
+                🏆 AI 工具推荐总榜
+              </Link>
+            </div>
+          </section>
         </main>
 
         {/* Footer */}

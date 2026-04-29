@@ -219,6 +219,49 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Hot SEO Pages */}
+      <section className="max-w-7xl mx-auto px-4 mb-16">
+        <h2 className="text-xl sm:text-2xl font-bold mb-6">🔥 热门 SEO 页面</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <Link href="/seo/best-ai-tools" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏆 2025年最好用的 AI 工具推荐</h3>
+            <p className="text-xs text-gray-500 mt-1">精选 82+ 款 AI 工具，真实评测排行</p>
+          </Link>
+          <Link href="/seo/ai-writing-tools" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">✍️ AI 写作工具推荐 Top 10</h3>
+            <p className="text-xs text-gray-500 mt-1">ChatGPT、Claude、Grammarly 全面对比</p>
+          </Link>
+          <Link href="/seo/ai-tools-for-students" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🎓 适合学生的 AI 工具推荐</h3>
+            <p className="text-xs text-gray-500 mt-1">提升学习效率的必备 AI 工具</p>
+          </Link>
+          <Link href="/seo/ai-tools-for-business" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏢 企业级 AI 工具推荐</h3>
+            <p className="text-xs text-gray-500 mt-1">提升业务效率的 AI 解决方案</p>
+          </Link>
+          <Link href="/seo/chatgpt-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 ChatGPT 替代方案</h3>
+            <p className="text-xs text-gray-500 mt-1">Claude、DeepSeek、Gemini 等替代工具</p>
+          </Link>
+          <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Midjourney 替代方案</h3>
+            <p className="text-xs text-gray-500 mt-1">DALL-E 3、Stable Diffusion 等图像工具</p>
+          </Link>
+          <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Notion AI 替代方案</h3>
+            <p className="text-xs text-gray-500 mt-1">Mem.ai、Taskade 等 AI 知识管理工具</p>
+          </Link>
+          <Link href="/seo/chatgpt-vs-claude" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ ChatGPT vs Claude 对比</h3>
+            <p className="text-xs text-gray-500 mt-1">哪个 AI 助手更适合你？</p>
+          </Link>
+          <Link href="/seo/midjourney-vs-dalle" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Midjourney vs DALL-E 3 对比</h3>
+            <p className="text-xs text-gray-500 mt-1">AI 图像生成工具怎么选？</p>
+          </Link>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-gray-800 py-10">
         <div className="max-w-7xl mx-auto px-4">

@@ -1199,3 +1199,131 @@ for (const t of tools) {
 for (const cat of categories) {
   cat.count = catCounts[cat.id] || 0;
 }
+
+// === Phase 2: SEO & Affiliate Helpers ===
+
+export function outboundLink(url: string, label: string, trackingId?: string): { href: string; rel: string; target: string } {
+  const href = trackingId ? `${url}?ref=stykai&aid=${trackingId}` : `${url}?ref=stykai`;
+  return { href, rel: 'noopener noreferrer nofollow', target: '_blank' };
+}
+
+export function getCategoryName(catId: string): string {
+  const cat = categories.find(c => c.id === catId);
+  return cat ? cat.name : catId;
+}
+
+export function getCategoryIcon(catId: string): string {
+  const cat = categories.find(c => c.id === catId);
+  return cat ? cat.icon : '';
+}
+
+export function getToolsByCategory(catId: string): Tool[] {
+  return tools.filter(t => t.category === catId).sort((a, b) => (b.score || 0) - (a.score || 0));
+}
+
+export function getToolsByTag(tag: string): Tool[] {
+  return tools.filter(t => t.tags.some(tg => tg.includes(tag))).sort((a, b) => (b.score || 0) - (a.score || 0));
+}
+
+export function getRelatedTools(tool: Tool, limit: number = 4): Tool[] {
+  const sameCat = tools.filter(t => t.id !== tool.id && t.category === tool.category);
+  const sameTag = tools.filter(t => t.id !== tool.id && t.category !== tool.category && t.tags.some(tg => tool.tags.includes(tg)));
+  const others = tools.filter(t => t.id !== tool.id && t.category !== tool.category && !t.tags.some(tg => tool.tags.includes(tg)));
+  const combined = [...sameCat, ...sameTag, ...others];
+  return combined.slice(0, limit);
+}
+
+export function getAlternatives(tool: Tool, limit: number = 3): Tool[] {
+  return tools.filter(t => t.id !== tool.id && t.category === tool.category).sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, limit);
+}
+
+export function getPricingLabel(pricing: string): string {
+  const map: Record<string, string> = { free: '免费', freemium: '免费+付费', paid: '付费' };
+  return map[pricing] || pricing;
+}
+
+export function generateFAQs(tool: Tool): { q: string; a: string }[] {
+  const faqs = [
+    { q: `${tool.name} 是什么？`, a: `${tool.description}` },
+    { q: `${tool.name} 收费吗？`, a: `${tool.name} 采用 ${getPricingLabel(tool.pricing)} 模式。${tool.pricing === 'free' ? '完全免费使用。' : tool.pricing === 'freemium' ? '提供免费版本，付费版本有更多功能和额度。' : '需要付费订阅才能使用全部功能。'}` },
+    { q: `${tool.name} 有哪些主要功能？`, a: `${tool.name} 的核心功能包括：${tool.tags.join('、')}。主要应用于 ${tool.useCases.join('、')} 等场景。` },
+    { q: `${tool.name} 适合哪些人使用？`, a: `${tool.name} 适合需要 ${tool.useCases.slice(0, 3).join('、')} 的用户。${tool.prosCons.pros.slice(0, 2).join('和')} 是其突出优势。` },
+    { q: `${tool.name} 有什么优缺点？`, a: `优点包括：${tool.prosCons.pros.join('、')}。不足之处：${tool.prosCons.cons.join('、')}。总体评分 ${tool.score}/10。` },
+  ];
+  return faqs;
+}
+
+export function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+// SEO page descriptions
+export function getSeoPageData() {
+  return {
+    'best-ai-tools': {
+      title: '2025年最好用的 AI 工具推荐 Top 82+ | 精选评测排行',
+      description: '精选 82+ 款最好用的 AI 工具，涵盖写作、图像、编程、视频等 8 大分类。真实评分、优缺点分析，帮你找到最适合的 AI 工具。',
+      h1: '2025年最好用的 AI 工具推荐',
+      intro: 'AI 工具爆发式增长的时代，我们从 82+ 款工具中精选出各分类最值得使用的产品。以下是按分类整理的最佳 AI 工具推荐。',
+    },
+    'ai-writing-tools': {
+      title: 'AI 写作工具推荐 Top 10 | 2025年最好用的 AI 写作助手',
+      description: '精选 10+ 款 AI 写作工具，对比 ChatGPT、Claude、Grammarly、Notion AI 等。从功能、定价、优缺点全面评测。',
+      h1: 'AI 写作工具推荐',
+      intro: 'AI 写作工具可以帮助你更高效地创作内容、优化文案、改进语法。以下是精选的 AI 写作工具，按评分排序。',
+    },
+    'ai-tools-for-students': {
+      title: '适合学生的 AI 工具推荐 | 学习效率提升必备',
+      description: '学生必备的 AI 工具推荐，涵盖写作辅助、研究搜索、编程学习、笔记管理等场景，帮助提升学习效率。',
+      h1: '学生必看的 AI 工具推荐',
+      intro: '作为学生，AI 工具可以帮你写论文、做研究、学编程、管理笔记。以下是专为学生精选的 AI 工具。',
+    },
+    'ai-tools-for-business': {
+      title: '企业级 AI 工具推荐 | 提升业务效率的 AI 解决方案',
+      description: '为企业团队精选的 AI 工具，涵盖营销、生产力、数据分析、内容创作等场景。提升团队效率，驱动业务增长。',
+      h1: '企业级 AI 工具推荐',
+      intro: '企业团队可以使用 AI 工具提高生产力、优化营销、自动化工作流。以下是适合企业的 AI 工具推荐。',
+    },
+    'chatgpt-alternatives': {
+      title: 'ChatGPT 替代方案 | 2025年最佳替代工具推荐',
+      description: '寻找 ChatGPT 替代品？我们精选了 Claude、DeepSeek、Gemini 等 10+ 款替代工具，从功能、定价、优缺点全面对比。',
+      h1: 'ChatGPT 替代工具推荐',
+      intro: 'ChatGPT 虽然强大，但还有其他优秀的 AI 对话工具值得尝试。以下是不错的 ChatGPT 替代方案。',
+    },
+    'midjourney-alternatives': {
+      title: 'Midjourney 替代方案 | 2025年最佳 AI 图像生成工具推荐',
+      description: '寻找 Midjourney 替代品？对比 DALL-E 3、Stable Diffusion、Leonardo、Canva AI 等图像生成工具，找到最适合你的选择。',
+      h1: 'Midjourney 替代工具推荐',
+      intro: 'Midjourney 虽好，但其他 AI 图像生成工具也有独特的优势。以下是值得关注的 Midjourney 替代方案。',
+    },
+    'notion-ai-alternatives': {
+      title: 'Notion AI 替代方案 | 2025年最佳 AI 笔记知识管理工具',
+      description: '寻找 Notion AI 替代品？对比 Mem.ai、Taskade、Obsidian 等 AI 知识管理工具，找到更适合你的笔记方案。',
+      h1: 'Notion AI 替代工具推荐',
+      intro: 'Notion AI 虽然集成方便，但其他 AI 笔记和知识管理工具也各具特色。以下是值得尝试的替代方案。',
+    },
+    'chatgpt-vs-claude': {
+      title: 'ChatGPT vs Claude 详细对比 | 哪个更适合你？',
+      description: 'ChatGPT 和 Claude 全面对比：功能、定价、优缺点、使用场景。帮你决定哪个 AI 助手最适合你的需求。',
+      h1: 'ChatGPT vs Claude：详细对比评测',
+      intro: 'ChatGPT 和 Claude 是当前最受欢迎的两款 AI 对话助手。它们各有特色，适合不同的使用场景。以下是详细对比。',
+    },
+    'midjourney-vs-dalle': {
+      title: 'Midjourney vs DALL-E 3 详细对比 | AI 图像生成工具怎么选？',
+      description: 'Midjourney 和 DALL-E 3 全面对比：图像质量、文字渲染、定价、使用体验。帮你选择最适合的 AI 图像生成工具。',
+      h1: 'Midjourney vs DALL-E 3：详细对比评测',
+      intro: 'Midjourney 和 DALL-E 3 是 AI 图像生成领域的两大标杆。它们风格不同，各有擅长领域。以下是详细对比。',
+    },
+  };
+}
+
+export function getBestForData() {
+  return {
+    'content-creation': { title: '内容创作最佳 AI 工具', desc: '适合内容创作者的最佳 AI 工具，涵盖写作、图像、视频生成等。', tag: '内容创作' },
+    'programming': { title: '编程开发最佳 AI 工具', desc: '专为开发者设计的最佳 AI 编程工具，提升代码效率。', tag: '编程' },
+    'design': { title: '设计创意最佳 AI 工具', desc: '设计师和创意工作者必备的 AI 工具推荐。', tag: '设计' },
+    'marketing': { title: '营销推广最佳 AI 工具', desc: '营销团队的最佳 AI 工具，提升转化和效率。', tag: '营销' },
+    'education': { title: '学习教育最佳 AI 工具', desc: '学生和教育工作者必看的 AI 工具，提升学习效率。', tag: '教育' },
+    'research': { title: '学术研究最佳 AI 工具', desc: '学术研究人员的最佳 AI 工具，加速文献综述和研究发现。', tag: '研究' },
+  };
+}
