@@ -104,6 +104,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO Entry Cards - Above Fold */}
+      <section className="max-w-7xl mx-auto px-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link
+            href="/seo/best-ai-tools"
+            className="card-base p-5 group relative overflow-hidden gradient-border"
+          >
+            <div className="relative z-10">
+              <div className="text-2xl mb-2">🏆</div>
+              <h3 className="font-bold text-base mb-1 group-hover:text-cyan-400 transition-colors">
+                Best AI Tools
+              </h3>
+              <p className="text-xs text-gray-500 mb-3 leading-relaxed">
+                精选 82+ 款最好用的 AI 工具，真实评分和优缺点分析
+              </p>
+              <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
+                查看全部 →
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            href="/seo/chatgpt-alternatives"
+            className="card-base p-5 group relative overflow-hidden gradient-border"
+          >
+            <div className="relative z-10">
+              <div className="text-2xl mb-2">🔄</div>
+              <h3 className="font-bold text-base mb-1 group-hover:text-cyan-400 transition-colors">
+                ChatGPT Alternatives
+              </h3>
+              <p className="text-xs text-gray-500 mb-3 leading-relaxed">
+                Claude、DeepSeek、Gemini 等 10+ 款替代方案全面对比
+              </p>
+              <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
+                查看全部 →
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            href="/seo/ai-writing-tools"
+            className="card-base p-5 group relative overflow-hidden gradient-border"
+          >
+            <div className="relative z-10">
+              <div className="text-2xl mb-2">✍️</div>
+              <h3 className="font-bold text-base mb-1 group-hover:text-cyan-400 transition-colors">
+                AI Writing Tools
+              </h3>
+              <p className="text-xs text-gray-500 mb-3 leading-relaxed">
+                精选 10+ 款 AI 写作工具，ChatGPT、Claude、Grammarly 对比
+              </p>
+              <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
+                查看全部 →
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       <main className="max-w-7xl mx-auto px-4 pb-20">
         {/* Recommended Tools */}
         <section id="recommended" className="mb-16">
