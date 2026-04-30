@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
   return {
-    title: `${tool.name} AI 工具评测 - 功能、定价与优缺点 (${tool.score}/10) | STYK Ai`,
-    description: `${tool.name} AI 工具完整评测：${tool.shortDesc}。包含功能介绍、使用案例、优缺点分析、定价信息。评分 ${tool.score}/10。`,
+    title: `${tool.name} Review 2026: Features, Pricing, Pros & Cons (${tool.score}/10) | STYK Ai`,
+    description: `Complete ${tool.name} review: ${tool.shortDesc}. Features, pricing, use cases, pros & cons. Rating ${tool.score}/10.`,
     openGraph: {
-      title: `${tool.name} AI 工具评测 - ${tool.score}/10`,
-      description: `${tool.shortDesc}。优缺点：${tool.prosCons.pros.slice(0, 2).join('、')}。`,
+      title: `${tool.name} Review - ${tool.score}/10 | STYK Ai`,
+      description: `${tool.shortDesc}. Pros: ${tool.prosCons.pros.slice(0, 2).join(', ')}.`,
     },
   };
 }

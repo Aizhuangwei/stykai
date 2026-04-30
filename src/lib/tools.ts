@@ -1,4 +1,4 @@
-// Type definitions
+﻿// Type definitions
 export interface Tool {
   id: string;
   name: string;
@@ -34,10 +34,10 @@ export const categories: Category[] = [
 ];
 
 export function seoTitle(t: Tool): string {
-  return t.name + ' AI \u5de5\u5177\u8bc4\u6d4b - \u529f\u80fd\u3001\u5b9a\u4ef7\u4e0e\u4f18\u7f3a\u70b9 | STYK Ai';
+  return t.name + ' Review 2026: Features, Pricing, Pros & Cons | STYK Ai';
 }
 export function seoDescription(t: Tool): string {
-  return t.name + ' AI \u5de5\u5177\u5b8c\u6574\u8bc4\u6d4b\uff1a' + t.shortDesc + '\u3002\u5305\u542b\u529f\u80fd\u4ecb\u7ecd\u3001\u4f7f\u7528\u6848\u4f8b\u3001\u4f18\u7f3a\u70b9\u5206\u6790\u3002';
+  return 'Review of ' + t.name + ': ' + t.shortDesc + '. Learn about features, pricing, use cases, pros & cons. Rating ' + (t.score || 'N/A') + '/10.';
 }
 
 export const tools: Tool[] = [
