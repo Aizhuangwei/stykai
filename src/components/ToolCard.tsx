@@ -2,9 +2,9 @@ import { Tool } from '@/lib/tools';
 import Link from 'next/link';
 
 const pricingStyles: Record<string, { label: string; className: string }> = {
-  free: { label: '免费', className: 'text-green-400 bg-green-500/10 border border-green-500/20' },
-  freemium: { label: '免费+付费', className: 'text-yellow-400 bg-yellow-500/10 border border-yellow-500/20' },
-  paid: { label: '付费', className: 'text-red-400 bg-red-500/10 border border-red-500/20' },
+  free: { label: 'Free', className: 'text-green-400 bg-green-500/10 border border-green-500/20' },
+  freemium: { label: 'Free+Paid', className: 'text-yellow-400 bg-yellow-500/10 border border-yellow-500/20' },
+  paid: { label: 'Paid', className: 'text-red-400 bg-red-500/10 border border-red-500/20' },
 };
 
 export default function ToolCard({ tool, featured }: { tool: Tool; featured?: boolean }) {

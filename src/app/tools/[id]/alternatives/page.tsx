@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
   return {
-    title: `${tool.name} 替代品推荐 | 2025年最佳替代工具 | STYK Ai`,
-    description: `寻找 ${tool.name} 替代品？我们精选了同分类中的最佳替代工具，功能对比、优缺点分析，帮你找到更适合的选择。`,
+    title: `${tool.name} Alternatives | Best Alternatives in 2026 | STYK Ai`,
+    description: `Looking for ${tool.name}  alternatives? We curated the best tools in the same category with feature and pros & cons comparison.`,
     openGraph: {
-      title: `${tool.name} 替代品推荐`,
-      description: `寻找 ${tool.name} 的最佳替代工具，全面对比分析。`,
+      title: `${tool.name} AlternativesRecommended`,
+      description: `Looking for ${tool.name}  best alternatives with comprehensive comparison.`,
     },
   };
 }
@@ -40,7 +40,7 @@ export default async function AlternativesPage({ params }: Props) {
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold gradient-text">STYK Ai</Link>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
-            <Link href={`/tools/${tool.id}`} className="hover:text-cyan-400 transition-colors">← 返回详情</Link>
+            <Link href={`/tools/${tool.id}`} className="hover:text-cyan-400 transition-colors">← Back to Details</Link>
           </nav>
         </div>
       </header>
@@ -48,28 +48,28 @@ export default async function AlternativesPage({ params }: Props) {
       <main className="max-w-5xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-cyan-400 transition-colors">首页</Link>
+          <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
           <span>/</span>
           <Link href={`/tools/${tool.id}`} className="hover:text-cyan-400 transition-colors">{tool.name}</Link>
           <span>/</span>
-          <span className="text-gray-300">替代品推荐</span>
+          <span className="text-gray-300">AlternativesRecommended</span>
         </div>
 
         {/* Hero */}
         <div className="mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-4">
-            {tool.name} 的最佳替代品
+            {tool.name}  Best Alternatives
           </h1>
           <p className="text-lg text-gray-400 max-w-3xl leading-relaxed">
-            {tool.name} 虽然是一款优秀的{cat ? cat.name : 'AI'}工具，但根据你的具体需求和预算，可能还有其他更合适的选择。
-            {count > 0 ? `以下是我们为你精选的 ${count} 款 ${tool.name} 替代品。` : '目前暂无同类替代品推荐。'}
+            {tool.name}  is a great{cat ? cat.name : 'AI'} tool, but there may be better options for your needs and budget.
+            {count > 0 ? `Here are ${count}  ${tool.name}  alternatives.` : 'No similar alternatives available yet.'}
           </p>
         </div>
 
         {/* Why look for alternatives */}
         <section className="card-base p-6 mb-10">
           <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
-            <span>🤔</span> 为什么要寻找替代品？
+            <span>🤔</span> Why Look for Alternatives?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {tool.prosCons.cons.slice(0, 3).length > 0 ? (
@@ -82,7 +82,7 @@ export default async function AlternativesPage({ params }: Props) {
                 </div>
               ))
             ) : (
-              <p className="text-sm text-gray-500">暂无详细的不足说明，建议根据自身需求评估。</p>
+              <p className="text-sm text-gray-500">No detailed drawbacks available. Evaluate based on your needs.</p>
             )}
           </div>
         </section>
@@ -91,7 +91,7 @@ export default async function AlternativesPage({ params }: Props) {
         {alternatives.length > 0 ? (
           <section className="space-y-6 mb-12">
             <h2 className="text-xl font-bold flex items-center gap-2">
-              <span>🔄</span> 推荐替代工具
+              <span>🔄</span> Recommended Alternatives
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {alternatives.map((alt, index) => {
@@ -119,7 +119,7 @@ export default async function AlternativesPage({ params }: Props) {
                         alt.pricing === 'freemium' ? 'text-yellow-400 bg-yellow-500/10 border border-yellow-500/20' :
                         'text-red-400 bg-red-500/10 border border-red-500/20'
                       }`}>
-                        {alt.pricing === 'free' ? '免费' : alt.pricing === 'freemium' ? '免费+付费' : '付费'}
+                        {alt.pricing === 'free' ? 'Free' : alt.pricing === 'freemium' ? 'Free+Paid' : 'Paid'}
                       </span>
                       {alt.tags.slice(0, 2).map(tag => (
                         <span key={tag} className="text-xs text-gray-600">{tag}</span>
@@ -130,23 +130,23 @@ export default async function AlternativesPage({ params }: Props) {
                         href={`/tools/${alt.id}`}
                         className="text-xs px-3 py-1.5 bg-cyan-500/10 text-cyan-400 rounded-lg hover:bg-cyan-500/20 transition-colors"
                       >
-                        查看详情
+                        View Details
                       </Link>
                       <Link
                         href={`/tools/${alt.id}/review`}
                         className="text-xs px-3 py-1.5 bg-gray-800 text-gray-400 rounded-lg hover:bg-gray-700 transition-colors"
                       >
-                        评测
+                        Review
                       </Link>
                     </div>
                     {/* Comparison note */}
                     <div className="mt-3 pt-3 border-t border-gray-800">
                       <p className="text-xs text-gray-500">
-                        <span className="text-cyan-400">替代建议：</span>
-                        {alt.name} 与 {tool.name} 同属{getCategoryName(tool.category)}领域，{alt.score && tool.score
-                          ? (alt.score >= tool.score ? `评分更高（${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）` : `评分相近（${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）`)
-                          : '功能定位相似'}。
-                        {alt.pricing === 'free' ? ' 完全免费使用。' : alt.pricing === 'freemium' ? ' 提供免费版本。' : ''}
+                        <span className="text-cyan-400"> Recommendation: </span>
+                        {alt.name} vs {tool.name}  both in the {getCategoryName(tool.category)} category, {alt.score && tool.score
+                          ? (alt.score >= tool.score ? `higher rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）` : `similar rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）`)
+                          : ' similar positioning'}.
+                        {alt.pricing === 'free' ? ' Completely free.' : alt.pricing === 'freemium' ? ' Free version available.' : ''}
                       </p>
                     </div>
                   </div>
@@ -157,47 +157,47 @@ export default async function AlternativesPage({ params }: Props) {
         ) : (
           <section className="text-center py-12 card-base mb-12">
             <div className="text-5xl mb-4">🔍</div>
-            <p className="text-gray-500">暂无同类替代工具</p>
+            <p className="text-gray-500">No similar alternatives found</p>
             <Link href="/" className="inline-block mt-4 text-sm text-cyan-400 hover:underline">
-              浏览全部 AI 工具 →
+              Browse All AI Tools →
             </Link>
           </section>
         )}
 
         {/* Alternative SEO Pages */}
         <section className="mt-10 border-t border-gray-800 pt-8">
-          <h2 className="text-xl font-bold mb-6">📖 更多替代方案推荐</h2>
+          <h2 className="text-xl font-bold mb-6">📖 More Alternative Recommendations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <Link href="/seo/chatgpt-alternatives" className="card-base p-4 group">
-              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">ChatGPT 替代方案</h3>
-              <p className="text-xs text-gray-500 mt-1">寻找 ChatGPT 替代品，对比 Claude、DeepSeek 等</p>
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">ChatGPT Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for ChatGPT alternatives? Compare Claude, DeepSeek and more</p>
             </Link>
             <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
-              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Midjourney 替代方案</h3>
-              <p className="text-xs text-gray-500 mt-1">寻找 Midjourney 替代品，对比 DALL-E 3、SD 等</p>
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Midjourney Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for Midjourney alternatives? Compare DALL-E 3, SD and more</p>
             </Link>
             <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
-              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Notion AI 替代方案</h3>
-              <p className="text-xs text-gray-500 mt-1">寻找 Notion AI 替代品，对比 Mem.ai、Taskade 等</p>
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Notion AI Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for Notion AI alternatives? Compare Mem.ai, Taskade and more</p>
             </Link>
           </div>
         </section>
 
         {/* Internal Links */}
         <section className="mt-10">
-          <h2 className="text-lg font-bold mb-4">🔗 相关页面</h2>
+          <h2 className="text-lg font-bold mb-4">🔗 Related Pages</h2>
           <div className="flex flex-wrap gap-3">
             <Link href={`/tools/${tool.id}`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
-              📋 {tool.name} 详情
+              📋 {tool.name} Details
             </Link>
             <Link href={`/tools/${tool.id}/review`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
-              📝 {tool.name} 评测
+              📝 {tool.name} Review
             </Link>
             <Link href={`/tools/${tool.id}/best-for`} className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
-              🎯 {tool.name} 最佳场景
+              🎯 {tool.name} Best Use Cases
             </Link>
             <Link href="/" className="px-4 py-2 bg-gray-800/60 hover:bg-gray-700 text-sm text-gray-300 rounded-lg transition-colors">
-              🏠 全部工具
+              🏠 All Tools
             </Link>
           </div>
         </section>

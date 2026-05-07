@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const navItems = [
-  { label: '首页', href: '/' },
-  { label: '分类', href: '/#categories' },
-  { label: '提交工具', href: '/submit' },
-  { label: '关于我们', href: '/about' },
+  { label: 'Home', href: '/' },
+  { label: 'Categories', href: '/#categories' },
+  { label: 'Submit Tool', href: '/submit' },
+  { label: 'About Us', href: '/about' },
 ];
 
 export default function Header() {

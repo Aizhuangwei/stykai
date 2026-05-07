@@ -34,8 +34,8 @@ export default function Home() {
     [...tools].sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 8),
   []);
 
-  // Random featured (4 random tools, refreshed on mount)
-  const [recommendedTools] = useState(() => {
+  // Random featured (6 random tools, refreshed on mount)
+  const [featuredTools] = useState(() => {
     const shuffled = [...tools].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 6);
   });
@@ -54,17 +54,17 @@ export default function Home() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-xs text-cyan-400">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            {tools.length}+ AI 工具已收录
+            {tools.length}+ AI Tools Curated
           </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text-hero leading-tight">
-            STYK Ai 导航站
+            STYK Ai Navigation
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            探索并快速找到最好的 AI 工具。精选评测，真实对比，帮你做出最佳选择。
+            Discover and find the best AI tools quickly. Curated reviews, honest comparisons, helping you make the right choice.
           </p>
 
           {/* Search */}
@@ -78,7 +78,7 @@ export default function Home() {
               </svg>
               <input
                 type="text"
-                placeholder="搜索 AI 工具名称、功能或标签..."
+                placeholder="Search AI tools by name, feature or tag..."
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-5 py-4 bg-gray-900/80 border border-gray-700/50 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition text-base"
@@ -90,15 +90,15 @@ export default function Home() {
           <div className="mt-10 flex justify-center gap-6 sm:gap-10 text-center">
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-cyan-400">{tools.length}+</div>
-              <div className="text-xs text-gray-500 mt-1">AI 工具</div>
+              <div className="text-xs text-gray-500 mt-1">AI Tools</div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-purple-400">{categories.length}</div>
-              <div className="text-xs text-gray-500 mt-1">分类</div>
+              <div className="text-xs text-gray-500 mt-1">Categories</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold text-green-400">每日</div>
-              <div className="text-xs text-gray-500 mt-1">更新</div>
+              <div className="text-2xl sm:text-3xl font-bold text-green-400">Daily</div>
+              <div className="text-xs text-gray-500 mt-1">Updates</div>
             </div>
           </div>
         </div>
@@ -117,10 +117,10 @@ export default function Home() {
                 Best AI Tools
               </h3>
               <p className="text-xs text-gray-500 mb-3 leading-relaxed">
-                精选 82+ 款最好用的 AI 工具，真实评分和优缺点分析
+                82+ best AI tools with real ratings and pros & cons analysis
               </p>
               <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
-                查看全部 →
+                View All →
               </span>
             </div>
           </Link>
@@ -135,10 +135,10 @@ export default function Home() {
                 ChatGPT Alternatives
               </h3>
               <p className="text-xs text-gray-500 mb-3 leading-relaxed">
-                Claude、DeepSeek、Gemini 等 10+ 款替代方案全面对比
+                10+ alternatives including Claude, DeepSeek, Gemini fully compared
               </p>
               <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
-                查看全部 →
+                View All →
               </span>
             </div>
           </Link>
@@ -153,10 +153,10 @@ export default function Home() {
                 AI Writing Tools
               </h3>
               <p className="text-xs text-gray-500 mb-3 leading-relaxed">
-                精选 10+ 款 AI 写作工具，ChatGPT、Claude、Grammarly 对比
+                10+ AI writing tools compared: ChatGPT, Claude, Grammarly & more
               </p>
               <span className="inline-block text-xs font-medium text-cyan-400 group-hover:translate-x-1 transition-transform">
-                查看全部 →
+                View All →
               </span>
             </div>
           </Link>
@@ -164,14 +164,14 @@ export default function Home() {
       </section>
 
       <main className="max-w-7xl mx-auto px-4 pb-20">
-        {/* Recommended Tools */}
-        <section id="recommended" className="mb-16">
+        {/* Featured Tools */}
+        <section id="featured" className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold">🔥 推荐工具</h2>
-            <span className="text-xs text-gray-500">为你精选</span>
+            <h2 className="text-xl sm:text-2xl font-bold">🔥 Featured Tools</h2>
+            <span className="text-xs text-gray-500">Handpicked for you</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {recommendedTools.map(tool => (
+            {featuredTools.map(tool => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
           </div>
@@ -179,7 +179,7 @@ export default function Home() {
 
         {/* Categories */}
         <section id="categories" className="mb-16">
-          <h2 className="text-xl sm:text-2xl font-bold mb-6">📂 工具分类</h2>
+          <h2 className="text-xl sm:text-2xl font-bold mb-6">📂 Categories</h2>
           <CategoryNav
             categories={categories}
             active={activeCategory}
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
               {filteredTools.length === 0 && (
                 <div className="text-center py-12 text-gray-500">
-                  <p>该分类暂无工具</p>
+                  <p>No tools in this category yet</p>
                 </div>
               )}
             </div>
@@ -207,8 +207,8 @@ export default function Home() {
         {/* Hot Tools */}
         <section id="hot" className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold">⭐ 热门工具</h2>
-            <span className="text-xs text-gray-500">按评分排序</span>
+            <h2 className="text-xl sm:text-2xl font-bold">⭐ Top Rated</h2>
+            <span className="text-xs text-gray-500">Sorted by score</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {hotTools.map((tool, i) => (
@@ -237,11 +237,11 @@ export default function Home() {
         {/* All Tools */}
         <section id="all-tools">
           <h2 className="text-xl sm:text-2xl font-bold mb-6">
-            📋 全部工具
+            📋 All Tools
             <span className="text-sm font-normal text-gray-500 ml-3">
               {activeCategory === 'all'
-                ? `${filteredTools.length} 个工具`
-                : `${filteredTools.length} 个 · ${categories.find(c => c.id === activeCategory)?.name || ''}`
+                ? `${filteredTools.length} tools`
+                : `${filteredTools.length} · ${categories.find(c => c.id === activeCategory)?.name || ''}`
               }
             </span>
           </h2>
@@ -260,12 +260,12 @@ export default function Home() {
           {filteredTools.length === 0 ? (
             <div className="text-center py-16">
               <div className="text-5xl mb-4">🔍</div>
-              <p className="text-gray-500">没有找到匹配的工具</p>
+              <p className="text-gray-500">No matching tools found</p>
               <button
                 onClick={() => { setSearchQuery(''); setActiveCategory('all'); }}
                 className="mt-4 text-sm text-cyan-400 hover:underline"
               >
-                清除筛选条件
+                Clear Filters
               </button>
             </div>
           ) : (
@@ -278,45 +278,45 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Hot SEO Pages */}
+      {/* SEO Pages */}
       <section className="max-w-7xl mx-auto px-4 mb-16">
-        <h2 className="text-xl sm:text-2xl font-bold mb-6">🔥 热门 SEO 页面</h2>
+        <h2 className="text-xl sm:text-2xl font-bold mb-6">🔥 Popular SEO Pages</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           <Link href="/seo/best-ai-tools" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏆 2025年最好用的 AI 工具推荐</h3>
-            <p className="text-xs text-gray-500 mt-1">精选 82+ 款 AI 工具，真实评测排行</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏆 Best AI Tools 2026</h3>
+            <p className="text-xs text-gray-500 mt-1">82+ AI tools curated with real reviews</p>
           </Link>
           <Link href="/seo/ai-writing-tools" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">✍️ AI 写作工具推荐 Top 10</h3>
-            <p className="text-xs text-gray-500 mt-1">ChatGPT、Claude、Grammarly 全面对比</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">✍️ AI Writing Tools Top 10</h3>
+            <p className="text-xs text-gray-500 mt-1">ChatGPT, Claude & Grammarly compared</p>
           </Link>
           <Link href="/seo/ai-tools-for-students" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🎓 适合学生的 AI 工具推荐</h3>
-            <p className="text-xs text-gray-500 mt-1">提升学习效率的必备 AI 工具</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🎓 AI Tools for Students</h3>
+            <p className="text-xs text-gray-500 mt-1">Boost learning efficiency with AI</p>
           </Link>
           <Link href="/seo/ai-tools-for-business" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏢 企业级 AI 工具推荐</h3>
-            <p className="text-xs text-gray-500 mt-1">提升业务效率的 AI 解决方案</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏢 AI Tools for Business</h3>
+            <p className="text-xs text-gray-500 mt-1">Boost productivity with enterprise AI</p>
           </Link>
           <Link href="/seo/chatgpt-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 ChatGPT 替代方案</h3>
-            <p className="text-xs text-gray-500 mt-1">Claude、DeepSeek、Gemini 等替代工具</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 ChatGPT Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">Claude, DeepSeek, Gemini & more</p>
           </Link>
           <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Midjourney 替代方案</h3>
-            <p className="text-xs text-gray-500 mt-1">DALL-E 3、Stable Diffusion 等图像工具</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Midjourney Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">DALL-E 3, Stable Diffusion & more</p>
           </Link>
           <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Notion AI 替代方案</h3>
-            <p className="text-xs text-gray-500 mt-1">Mem.ai、Taskade 等 AI 知识管理工具</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Notion AI Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">Mem.ai, Taskade & more tools</p>
           </Link>
           <Link href="/seo/chatgpt-vs-claude" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ ChatGPT vs Claude 对比</h3>
-            <p className="text-xs text-gray-500 mt-1">哪个 AI 助手更适合你？</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ ChatGPT vs Claude</h3>
+            <p className="text-xs text-gray-500 mt-1">Which AI assistant is right for you?</p>
           </Link>
           <Link href="/seo/midjourney-vs-dalle" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Midjourney vs DALL-E 3 对比</h3>
-            <p className="text-xs text-gray-500 mt-1">AI 图像生成工具怎么选？</p>
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Midjourney vs DALL-E 3</h3>
+            <p className="text-xs text-gray-500 mt-1">Which AI image generator wins?</p>
           </Link>
         </div>
       </section>
@@ -327,14 +327,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-lg font-bold gradient-text">STYK Ai</span>
             <nav className="flex gap-6 text-sm text-gray-500">
-              <a href="/" className="hover:text-cyan-400 transition-colors">首页</a>
-              <a href="/#categories" className="hover:text-cyan-400 transition-colors">分类</a>
-              <a href="/submit" className="hover:text-cyan-400 transition-colors">提交工具</a>
-              <a href="/about" className="hover:text-cyan-400 transition-colors">关于</a>
+              <a href="/" className="hover:text-cyan-400 transition-colors">Home</a>
+              <a href="/#categories" className="hover:text-cyan-400 transition-colors">Categories</a>
+              <a href="/submit" className="hover:text-cyan-400 transition-colors">Submit Tool</a>
+              <a href="/about" className="hover:text-cyan-400 transition-colors">About</a>
             </nav>
           </div>
           <div className="mt-6 text-center text-xs text-gray-600">
-            © 2026 STYK Ai. 探索最好的 AI 工具。
+            &copy; 2026 STYK Ai. Discover the best AI tools.
           </div>
         </div>
       </footer>

@@ -76,7 +76,7 @@ export default async function SeoPage({ params }: Props) {
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold gradient-text">STYK Ai</Link>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
-            <Link href="/" className="hover:text-cyan-400 transition-colors">← 返回首页</Link>
+            <Link href="/" className="hover:text-cyan-400 transition-colors">← Back to Home</Link>
           </nav>
         </div>
       </header>
@@ -84,7 +84,7 @@ export default async function SeoPage({ params }: Props) {
       <main className="max-w-5xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-cyan-400 transition-colors">首页</Link>
+          <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
           <span>/</span>
           <span className="text-gray-300">{page.h1}</span>
         </div>
@@ -104,14 +104,14 @@ export default async function SeoPage({ params }: Props) {
           </div>
           {pageTools.length === 0 && (
             <div className="text-center py-16 text-gray-500">
-              <p>暂无工具数据</p>
+              <p>No tool data available</p>
             </div>
           )}
         </section>
 
         {/* Related SEO Pages */}
         <section className="mt-16 border-t border-gray-800 pt-10">
-          <h2 className="text-xl font-bold mb-6">📖 更多推荐</h2>
+          <h2 className="text-xl font-bold mb-6">📖 More Recommendations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {allSeoIds.filter(id2 => id2 !== id).slice(0, 6).map(id2 => {
               const p = pages[id2 as keyof typeof pages];
@@ -127,7 +127,7 @@ export default async function SeoPage({ params }: Props) {
 
         {/* Popular Tool Links */}
         <section className="mt-10">
-          <h2 className="text-xl font-bold mb-6">🔗 热门工具直达</h2>
+          <h2 className="text-xl font-bold mb-6">🔗 Popular Tools</h2>
           <div className="flex flex-wrap gap-2">
             {tools.filter(t => (t.score || 0) >= 9).slice(0, 12).map(tool => (
               <Link

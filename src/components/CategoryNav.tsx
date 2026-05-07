@@ -23,7 +23,7 @@ export default function CategoryNav({
             : 'bg-gray-900/50 text-gray-400 border border-gray-800 hover:border-gray-600 hover:text-gray-200'
         }`}
       >
-        全部
+        All
         <span className="text-xs opacity-60 ml-1.5">{totalCount}</span>
       </button>
       {categories.map(cat => (

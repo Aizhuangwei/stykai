@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categories.find(c => c.id === id);
   if (!cat) return {};
   return {
-    title: `${cat.icon} ${cat.name} AI 工具 - STYK Ai 导航站`,
-    description: `精选 ${cat.name} AI 工具列表，包含评分、优缺点和使用案例。发现最好的 ${cat.name} 工具。`,
+    title: `${cat.icon} ${cat.name} AI Tools - STYK Ai`,
+    description: `Best ${cat.name} AI tools with ratings, pros & cons. Discover the best ${cat.name} tools.`,
   };
 }
 
@@ -33,7 +33,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold gradient-text">STYK Ai</Link>
           <Link href="/" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-            ← 返回首页
+            ← Back to Home
           </Link>
         </div>
       </header>
@@ -46,7 +46,7 @@ export default async function CategoryPage({ params }: Props) {
             <h1 className="text-3xl sm:text-4xl font-bold gradient-text">{cat.name}</h1>
           </div>
           <p className="text-gray-400 mt-2">
-            共 {categoryTools.length} 个 {cat.name} 工具
+            {categoryTools.length} {cat.name} Tools
           </p>
         </div>
 
@@ -54,13 +54,13 @@ export default async function CategoryPage({ params }: Props) {
         {sortedTools.length === 0 ? (
           <div className="text-center py-20">
             <div className="text-5xl mb-4">📭</div>
-            <h2 className="text-xl font-bold mb-2">该分类暂无工具</h2>
-            <p className="text-gray-500 mb-6">我们正在努力收录更多工具</p>
+            <h2 className="text-xl font-bold mb-2">No tools in this category yet</h2>
+            <p className="text-gray-500 mb-6">We are working on adding more tools</p>
             <Link
               href="/"
               className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-xl transition"
             >
-              ← 返回首页
+              ← Back to Home
             </Link>
           </div>
         ) : (
@@ -73,7 +73,7 @@ export default async function CategoryPage({ params }: Props) {
 
         {/* Other categories */}
         <section className="mt-16">
-          <h2 className="text-xl font-bold mb-6">其他分类</h2>
+          <h2 className="text-xl font-bold mb-6">Other Categories</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {otherCategories.map(c => (
               <Link
@@ -85,7 +85,7 @@ export default async function CategoryPage({ params }: Props) {
                 <div className="text-sm font-medium group-hover:text-cyan-400 transition-colors">
                   {c.name}
                 </div>
-                <div className="text-xs text-gray-500 mt-0.5">{c.count} 个工具</div>
+                <div className="text-xs text-gray-500 mt-0.5">{c.count} tools</div>
               </Link>
             ))}
           </div>

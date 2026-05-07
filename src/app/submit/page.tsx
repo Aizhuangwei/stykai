@@ -24,7 +24,7 @@ export default function SubmitPage() {
     // Basic validation
     if (!form.name.trim() || !form.description.trim() || !form.url.trim()) {
       setStatus('error');
-      setErrorMsg('请至少填写工具名称、描述和官网链接');
+      setErrorMsg('Please fill in at least tool name, description and official URL');
       return;
     }
 
@@ -53,7 +53,7 @@ export default function SubmitPage() {
       setForm({ name: '', description: '', shortDesc: '', url: '', category: 'productivity', tags: '' });
     } catch {
       setStatus('error');
-      setErrorMsg('保存失败，请重试');
+      setErrorMsg('Save failed, please try again');
     }
   };
 
@@ -63,22 +63,22 @@ export default function SubmitPage() {
 
       <main className="max-w-2xl mx-auto px-4 py-16">
         <div className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-3">提交 AI 工具</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-3">Submit AI Tool</h1>
           <p className="text-gray-400">
-            推荐你发现的好用 AI 工具，审核通过后会展示在导航站中。
+            Recommend a great AI tool you found. It will be listed after review.
           </p>
         </div>
 
         {status === 'success' ? (
           <div className="card-base p-8 text-center">
             <div className="text-5xl mb-4">🎉</div>
-            <h2 className="text-xl font-bold mb-2">提交成功！</h2>
-            <p className="text-gray-400 mb-6">感谢你的推荐，我们会尽快审核。</p>
+            <h2 className="text-xl font-bold mb-2">Submitted Successfully!</h2>
+            <p className="text-gray-400 mb-6">Thanks for your recommendation! We will review it soon.</p>
             <button
               onClick={() => setStatus('idle')}
               className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-xl transition"
             >
-              再提交一个
+              Submit Another
             </button>
           </div>
         ) : (
@@ -86,13 +86,13 @@ export default function SubmitPage() {
             {/* Name */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-1.5">
-                工具名称 <span className="text-red-400">*</span>
+                Tool Name <span className="text-red-400">*</span>
               </label>
               <input
                 type="text"
                 value={form.name}
                 onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                placeholder="例如：ChatGPT"
+                placeholder="e.g. ChatGPT"
                 className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition"
               />
             </div>
@@ -100,13 +100,13 @@ export default function SubmitPage() {
             {/* Short Description */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-1.5">
-                简短描述
+                Short Description
               </label>
               <input
                 type="text"
                 value={form.shortDesc}
                 onChange={e => setForm(f => ({ ...f, shortDesc: e.target.value }))}
-                placeholder="一句话描述工具功能"
+                placeholder="Describe the tool in one sentence"
                 className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition"
               />
             </div>
@@ -114,13 +114,13 @@ export default function SubmitPage() {
             {/* Description */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-1.5">
-                详细描述 <span className="text-red-400">*</span>
+                Full Description <span className="text-red-400">*</span>
               </label>
               <textarea
                 value={form.description}
                 onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
                 rows={4}
-                placeholder="详细介绍这个工具的功能和特点"
+                placeholder="Describe the tool features in detail"
                 className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition resize-none"
               />
             </div>
@@ -128,7 +128,7 @@ export default function SubmitPage() {
             {/* URL */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-1.5">
-                官网链接 <span className="text-red-400">*</span>
+                Official Website URL <span className="text-red-400">*</span>
               </label>
               <input
                 type="url"
@@ -141,7 +141,7 @@ export default function SubmitPage() {
 
             {/* Category */}
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-1.5">分类</label>
+              <label className="block text-sm font-medium text-gray-300 mb-1.5">Categories</label>
               <select
                 value={form.category}
                 onChange={e => setForm(f => ({ ...f, category: e.target.value }))}
@@ -158,16 +158,16 @@ export default function SubmitPage() {
             {/* Tags */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-1.5">
-                标签
+                Tags
               </label>
               <input
                 type="text"
                 value={form.tags}
                 onChange={e => setForm(f => ({ ...f, tags: e.target.value }))}
-                placeholder="用逗号分隔，例如：AI写作, 内容生成, SEO"
+                placeholder="Comma separated, e.g. AI Writing, Content Generation, SEO"
                 className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition"
               />
-              <p className="text-xs text-gray-600 mt-1">多个标签用逗号隔开</p>
+              <p className="text-xs text-gray-600 mt-1">Separate multiple tags with commas</p>
             </div>
 
             {/* Error */}
@@ -182,7 +182,7 @@ export default function SubmitPage() {
               type="submit"
               className="w-full py-3.5 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-black font-bold rounded-xl transition text-base"
             >
-              提交工具 🚀
+              Submit Tool 🚀
             </button>
           </form>
         )}
