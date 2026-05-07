@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { tools, categories, generateFAQs, getRelatedTools, getAlternatives, getPricingLabel, outboundLink } from '@/lib/tools';
+import { tools, categories, generateFAQs, getRelatedTools, getAlternatives, outboundLink } from '@/lib/tools';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -28,7 +28,6 @@ export default async function ToolPage({ params }: Props) {
   if (!tool) notFound();
 
   const cat = categories.find(c => c.id === tool.category);
-  const relatedByCategory = tools.filter(t => t.category === tool.category && t.id !== tool.id).slice(0, 4);
   const relatedTools = getRelatedTools(tool, 4);
   const alternatives = getAlternatives(tool, 3);
   const faqs = generateFAQs(tool);

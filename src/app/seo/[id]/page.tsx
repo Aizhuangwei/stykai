@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { tools, categories, getSeoPageData, getToolsByCategory, getCategoryName, getCategoryIcon } from '@/lib/tools';
+import { tools, getSeoPageData, getToolsByCategory } from '@/lib/tools';
 import ToolCard from '@/components/ToolCard';
 
 interface Props { params: Promise<{ id: string }> }

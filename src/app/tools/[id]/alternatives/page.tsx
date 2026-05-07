@@ -1,8 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { tools, categories, getAlternatives, getCategoryName, getCategoryIcon } from '@/lib/tools';
-import ToolCard from '@/components/ToolCard';
+import { tools, categories, getAlternatives, getCategoryName } from '@/lib/tools';
 
 interface Props { params: Promise<{ id: string }> }
 
@@ -97,7 +96,7 @@ export default async function AlternativesPage({ params }: Props) {
               <span>🔄</span> Recommended Alternatives
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {alternatives.map((alt, index) => {
+              {alternatives.map((alt) => {
                 const altCat = categories.find(c => c.id === alt.category);
                 return (
                   <div key={alt.id} className="card-base p-5">
