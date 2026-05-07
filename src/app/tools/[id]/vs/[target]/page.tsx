@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!toolA || !toolB) return {};
   return {
     title: `${toolA.name} vs ${toolB.name} Comparison | Which AI Tool Is Better? | STYK Ai`,
-    description: `${toolA.name} and ${toolB.name} `,
+    description: `${toolA.name} vs ${toolB.name}: Compare features, pricing, pros & cons (${toolA.name}: ${toolA.score}/10 - ${toolB.name}: ${toolB.score}/10).`,
     openGraph: {
       title: `${toolA.name} vs ${toolB.name} Detailed Comparison`,
-      description: `${toolA.name}（${toolA.score}/10）vs ${toolB.name}（${toolB.score}/10） comprehensive comparison.`,
+      description: `${toolA.name} (${toolA.score}/10) vs ${toolB.name} (${toolB.score}/10) comprehensive comparison.`,
     },
     alternates: {
       canonical: `/tools/${id}/vs/${target}`,
@@ -311,7 +311,7 @@ export default async function VsPage({ params }: Props) {
             <span>⚖️</span> Comparison Verdict
           </h2>
           <p className="text-gray-400 leading-relaxed">
-            {toolA.name}（Rating {toolA.score}/10) and {toolB.name}（Rating {toolB.score}/10） are both excellent AI tools, 
+            {toolA.name} (Rating {toolA.score}/10) and {toolB.name} (Rating {toolB.score}/10) are both excellent AI tools, 
              but each excels in different use cases.
           </p>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">

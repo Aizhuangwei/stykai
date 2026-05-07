@@ -54,11 +54,25 @@ export default async function ToolPage({ params }: Props) {
     url: tool.officialUrl || tool.url,
   };
 
+  const breadcrumbData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stykai.com/' },
+      { '@type': 'ListItem', position: 2, name: cat ? `${cat.icon} ${cat.name}` : 'Tools', item: cat ? `https://www.stykai.com/category/${cat.id}` : 'https://www.stykai.com/' },
+      { '@type': 'ListItem', position: 3, name: tool.name, item: `https://www.stykai.com/tools/${tool.id}` },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       <div className="min-h-screen">

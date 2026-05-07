@@ -147,7 +147,7 @@ export default async function AlternativesPage({ params }: Props) {
                       <p className="text-xs text-gray-500">
                         <span className="text-cyan-400"> Recommendation: </span>
                         {alt.name} vs {tool.name}  both in the {getCategoryName(tool.category)} category, {alt.score && tool.score
-                          ? (alt.score >= tool.score ? `higher rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）` : `similar rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)}）`)
+                          ? (alt.score >= tool.score ? `higher rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)})` : `similar rating (${alt.score.toFixed(1)} vs ${tool.score.toFixed(1)})`)
                           : ' similar positioning'}.
                         {alt.pricing === 'free' ? ' Completely free.' : alt.pricing === 'freemium' ? ' Free version available.' : ''}
                       </p>
