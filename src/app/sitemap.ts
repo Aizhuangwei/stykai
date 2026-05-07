@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
-import { tools, categories, getSeoPageData, getBestForData } from '@/lib/tools';
+import { tools, categories, getSeoPageData } from '@/lib/tools';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.stykai.com';
-  const today = '2026-05-07';
+  const today = '2026-05-08';
 
   const entries: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: today, changeFrequency: 'daily', priority: 1.0 },
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // Tool sub-pages
+  // Tool sub-pages (alternatives, review, best-for)
   for (const tool of tools) {
     entries.push(
       {
@@ -53,23 +53,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
   }
 
-  // SEO pages
+  // Top SEO landing pages (alternatives, comparison, curated lists)
   for (const seoId of Object.keys(getSeoPageData())) {
     entries.push({
       url: `${baseUrl}/seo/${seoId}`,
       lastModified: today,
       changeFrequency: 'weekly',
       priority: 0.9,
-    });
-  }
-
-  // Best-for pages
-  for (const bestForId of Object.keys(getBestForData())) {
-    entries.push({
-      url: `${baseUrl}/best-for/${bestForId}`,
-      lastModified: today,
-      changeFrequency: 'monthly',
-      priority: 0.6,
     });
   }
 

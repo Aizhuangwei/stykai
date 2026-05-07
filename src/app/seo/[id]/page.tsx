@@ -103,6 +103,8 @@ export default async function SeoPage({ params }: Props) {
       : [];
   } else if (id === 'devin-vs-cursor') {
     pageTools = [tools.find(t => t.id === 'devin'), tools.find(t => t.id === 'cursor')].filter(Boolean) as typeof tools;
+  } else if (id === 'cursor-vs-codeium') {
+    pageTools = [tools.find(t => t.id === 'cursor'), tools.find(t => t.id === 'codeium')].filter(Boolean) as typeof tools;
   }
 
   // All known SEO page IDs for internal links

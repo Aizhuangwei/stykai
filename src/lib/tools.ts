@@ -2048,6 +2048,12 @@ export function getSeoPageData() {
       h1: 'Cursor vs Windsurf: Detailed Comparison',
       intro: 'Cursor and Windsurf are the two leading AI-native code editors. Each has unique strengths for different development styles.',
     },
+    'cursor-vs-codeium': {
+      title: 'Cursor vs Codeium (Windsurf) 2026: Which AI Code Editor Is Better?',
+      description: 'Comprehensive Cursor vs Codeium (Windsurf) comparison: features, pricing, AI models, user experience. Decide which AI code editor best fits your development workflow.',
+      h1: 'Cursor vs Codeium (Windsurf): Detailed Comparison',
+      intro: 'Cursor and Codeium (Windsurf) are the two leading AI-native code editors. Each has unique strengths for different development styles.',
+    },
     'claude-vs-gemini': {
       title: 'Claude vs Gemini 2026: Detailed Comparison - Which Is Better?',
       description: 'Comprehensive Claude vs Gemini comparison: context window, reasoning, multimodal capabilities, pricing, and use cases.',
