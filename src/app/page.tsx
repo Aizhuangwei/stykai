@@ -361,10 +361,10 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-lg font-bold gradient-text">STYK Ai</span>
             <nav className="flex gap-6 text-sm text-gray-500">
-              <a href="/" className="hover:text-cyan-400 transition-colors">Home</a>
-              <a href="/#categories" className="hover:text-cyan-400 transition-colors">Categories</a>
-              <a href="/submit" className="hover:text-cyan-400 transition-colors">Submit Tool</a>
-              <a href="/about" className="hover:text-cyan-400 transition-colors">About</a>
+              <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
+              <Link href="/#categories" className="hover:text-cyan-400 transition-colors">Categories</Link>
+              <Link href="/submit" className="hover:text-cyan-400 transition-colors">Submit Tool</Link>
+              <Link href="/about" className="hover:text-cyan-400 transition-colors">About</Link>
             </nav>
           </div>
           <div className="mt-6 text-center text-xs text-gray-600">

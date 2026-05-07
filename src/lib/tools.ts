@@ -44,16 +44,16 @@ export const tools: Tool[] = [
   {
     id: 'chatgpt',
     name: 'ChatGPT',
-    description: 'A conversational AI assistant by OpenAI supporting text, code, data analysis and image understanding. GPT-4o offers multimodal capabilities for content creation, programming, learning and research.',
-    shortDesc: 'Leading conversational AI assistant with multimodal support',
+    description: 'OpenAI\'s flagship conversational AI assistant powered by GPT-4o and GPT-5 models. Supports multimodal inputs including text, code, images, and voice. Excels at content creation, programming, data analysis with Python execution, document processing, and real-time web browsing. Features custom GPTs, the GPT Store ecosystem, DALL-E 3 image generation integration, and 100M+ global users. The most versatile and widely adopted AI assistant with 95+ language support.',
+    shortDesc: 'World\'s most versatile AI assistant for content, code, and analysis',
     url: 'https://chat.openai.com',
     category: 'writing',
-    tags: ['AI Chat', 'Content Generation', 'Code Assistant', 'Multimodal', 'GPT-4o'],
+    tags: ['AI Chat', 'GPT-4o', 'Multimodal', 'Content Generation', 'Code Assistant', 'Custom GPTs', 'DALL-E Integration'],
     pricing: 'freemium',
-    useCases: ['Content Creation', 'Programming Help', 'Study & Research', 'Data Analysis', 'Brainstorming'],
-    prosCons: { pros: ['Multimodal understanding', 'Natural conversation', 'Rich ecosystem', 'Plugin system', 'Continuous updates'], cons: ['Free tier limited', 'Occasional inaccuracies', 'No real-time data', 'Privacy concerns', 'Paid version expensive'] },
+    useCases: ['Content Creation', 'Programming & Debugging', 'Data Analysis & Visualization', 'Language Translation', 'Brainstorming & Ideation'],
+    prosCons: { pros: ['Most versatile AI assistant available', 'Multimodal (text, image, voice)', 'GPT Store ecosystem', 'Strong reasoning abilities', 'DALL-E 3 integration'], cons: ['Free tier limited to GPT-mini', 'Occasional hallucinations', 'Context limits on free tier', 'Privacy concerns with data', 'Plus plan at $20/month'] },
     officialUrl: 'https://chat.openai.com',
-    score: 9.5,
+    score: 9.6,
   },
 
   {
@@ -1812,6 +1812,81 @@ export const tools: Tool[] = [
     officialUrl: 'https://longshot.ai',
     score: 8.3,
   },
+
+  {
+    id: 'sora',
+    name: 'Sora',
+    description: 'OpenAI\'s groundbreaking AI video generation model capable of creating high-resolution 1080p videos from text prompts. Features advanced physics understanding, camera control, character consistency, storyboard mode, and image-to-video capabilities. Generates up to 20-second clips with coherent motion, lighting, and scene composition. Available through ChatGPT Plus/Pro with expanding access throughout 2026.',
+    shortDesc: 'OpenAI\'s flagship AI video generation model',
+    url: 'https://sora.com',
+    category: 'video',
+    tags: ['AI Video', 'Text-to-Video', 'Video Generation', 'OpenAI', 'Creative Tools'],
+    pricing: 'paid',
+    useCases: ['Video Content Creation', 'Marketing Videos', 'Storyboarding', 'Social Media Content', 'Creative Prototyping'],
+    prosCons: { pros: ['Physics-aware video generation', '1080p resolution', 'Storyboard mode', 'Camera control', 'Image-to-video support'], cons: ['Limited access', 'Max 20-sec clips', 'Slow generation times', 'Expensive pricing', 'Still in beta'] },
+    officialUrl: 'https://sora.com',
+    score: 9.0,
+  },
+
+  {
+    id: 'notebooklm',
+    name: 'NotebookLM',
+    description: 'Google\'s AI-powered research assistant powered by Gemini 2.0 that lets you upload documents (PDFs, websites, YouTube videos, audio files, Google Docs, Slides) and interrogate them without hallucination. Features Audio Overviews that convert materials into podcast-style dialogue, interactive mode for real-time follow-up questions, cinematic video generation, and infographic creation. Free tier available with Pro at $19.99/month.',
+    shortDesc: 'Google\'s AI research assistant with document analysis',
+    url: 'https://notebooklm.google.com',
+    category: 'productivity',
+    tags: ['Research', 'Document Analysis', 'AI Note-Taking', 'Google AI', 'Podcast Generation'],
+    pricing: 'freemium',
+    useCases: ['Academic Research', 'Document Analysis', 'Meeting Notes Review', 'Content Research', 'Study & Learning'],
+    prosCons: { pros: ['No hallucination (source-locked)', 'Audio Overviews feature', 'Multi-format source support', 'Interactive Q&A', 'Cinematic video overviews'], cons: ['Google ecosystem only', 'Source limits on free tier', 'No real-time search', 'Limited collaboration', 'Pro tier $19.99/month'] },
+    officialUrl: 'https://notebooklm.google.com',
+    score: 9.2,
+  },
+
+  {
+    id: 'mistral-ai',
+    name: 'Mistral AI',
+    description: 'Leading European AI lab offering powerful language models including Mistral Large and the Le Chat conversational interface. Features strong multilingual performance, coding capabilities, and enterprise-grade RAG support. Le Chat Pro costs just $14.99/month making it the cheapest premium AI subscription. Open-source models available for self-hosting. Known for strong privacy practices under EU data regulations.',
+    shortDesc: 'European AI lab with powerful open-source models',
+    url: 'https://mistral.ai',
+    category: 'writing',
+    tags: ['AI Chat', 'Open Source', 'European AI', 'Coding Assistant', 'Multilingual'],
+    pricing: 'freemium',
+    useCases: ['Conversational AI', 'Code Generation', 'Document Analysis', 'Multilingual Translation', 'Enterprise RAG'],
+    prosCons: { pros: ['Strong multilingual performance', 'Open-source models', 'EU data privacy', 'Low-cost Le Chat Pro ($14.99)', 'Enterprise RAG support'], cons: ['Smaller ecosystem than OpenAI', 'Fewer integrations', 'Less multimodal support', 'Smaller community', 'Limited consumer features'] },
+    officialUrl: 'https://mistral.ai',
+    score: 8.7,
+  },
+
+  {
+    id: 'crewai',
+    name: 'CrewAI',
+    description: 'Leading open-source multi-agent orchestration framework for building autonomous AI agent teams. Define agents with roles, goals, and backstories, then orchestrate them through tasks. Features 44k+ GitHub stars, role-based multi-agent teams with 60%+ Fortune 500 enterprise adoption. MIT-licensed free framework plus paid AMP (Agent Management Platform) with visual Studio, deployment, tracing, and guardrails.',
+    shortDesc: 'Open-source multi-agent orchestration framework',
+    url: 'https://crewai.com',
+    category: 'code',
+    tags: ['AI Agents', 'Multi-Agent', 'Orchestration', 'Open Source', 'Python Framework'],
+    pricing: 'free',
+    useCases: ['Multi-Agent Workflows', 'Task Automation', 'Research Automation', 'Content Pipeline', 'Data Processing'],
+    prosCons: { pros: ['Open source (MIT)', '44k+ GitHub stars', '60%+ Fortune 500 adoption', 'Role-based agent design', 'Visual AMP platform'], cons: ['Python only', 'Complex setup', 'Resource intensive', 'Learning curve', 'AMP is paid'] },
+    officialUrl: 'https://crewai.com',
+    score: 8.8,
+  },
+
+  {
+    id: 'rask-ai',
+    name: 'Rask AI',
+    description: 'Leading AI video localization and dubbing platform supporting 135+ languages with advanced lip-sync technology. Automatically translates and dubs video content while matching lip movements to translated audio. Features auto-generated captions, voice cloning, and multi-speaker detection. Used by content creators and enterprises for global video distribution. Starting at $60/month for 25 minutes of translated video.',
+    shortDesc: 'AI video dubbing and localization platform',
+    url: 'https://www.rask.ai',
+    category: 'video',
+    tags: ['Video Dubbing', 'AI Translation', 'Lip-Sync', 'Video Localization', 'Content Creation'],
+    pricing: 'paid',
+    useCases: ['Video Translation', 'Content Localization', 'Multi-Language Content', 'Global Marketing', 'Educational Content'],
+    prosCons: { pros: ['135+ languages', 'Lip-sync technology', 'Auto-captions', 'Voice cloning', 'Multi-speaker detection'], cons: ['Expensive ($60+/mo)', 'Limits on basic plan', 'Slow processing for long videos', 'Lip-sync halves allowance', 'No free tier'] },
+    officialUrl: 'https://www.rask.ai',
+    score: 8.5,
+  },
 ];
 
 // Update category counts
@@ -1978,6 +2053,30 @@ export function getSeoPageData() {
       description: 'Comprehensive Claude vs Gemini comparison: context window, reasoning, multimodal capabilities, pricing, and use cases.',
       h1: 'Claude vs Gemini: Detailed Comparison',
       intro: 'Claude and Gemini are competing AI assistants from Anthropic and Google. Each has distinct strengths in different scenarios.',
+    },
+
+    // === NEW ALTERNATIVES PAGES (May 8) ===
+
+    'github-copilot-alternatives': {
+      title: 'Best GitHub Copilot Alternatives 2026 - Top AI Coding Assistants Compared',
+      description: 'Looking for GitHub Copilot alternatives? Compare Cursor, Claude Code, Windsurf, Amazon Q Developer, Tabnine and more. Full feature, pricing, and pros & cons analysis.',
+      h1: 'Best GitHub Copilot Alternatives',
+      intro: 'GitHub Copilot is the most popular AI coding assistant, but alternatives offer unique strengths for different development workflows. Here are the best GitHub Copilot alternatives.',
+    },
+    'dalle-alternatives': {
+      title: 'Best DALL-E 3 Alternatives 2026 - Top AI Image Generators Compared',
+      description: 'Looking for DALL-E 3 alternatives? Compare Midjourney, Stable Diffusion 3, Leonardo AI, Adobe Firefly and more. Find the best AI image generator for your creative needs.',
+      h1: 'Best DALL-E 3 Alternatives',
+      intro: 'DALL-E 3 is excellent, but other AI image generation tools offer different strengths in style, control, and pricing. Here are the best DALL-E 3 alternatives.',
+    },
+
+    // === NEW COMPARISON PAGES (May 8) ===
+
+    'devin-vs-cursor': {
+      title: 'Devin vs Cursor 2026: Which AI Coding Agent Is Better?',
+      description: 'Comprehensive Devin vs Cursor comparison: autonomous coding agent vs AI IDE. Compare features, pricing, autonomy level, and use cases to find your best fit.',
+      h1: 'Devin vs Cursor: Detailed Comparison',
+      intro: 'Devin and Cursor represent two different approaches to AI-assisted coding — fully autonomous agent vs AI-enhanced IDE. Each excels in different development scenarios.',
     },
   };
 }
