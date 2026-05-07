@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${tool.name} Best Use Cases`,
       description: `${tool.name}  ${tool.useCases.length} best use cases analyzed.`,
     },
+    alternates: {
+      canonical: `/tools/${id}/best-for`,
+    },
   };
 }
 

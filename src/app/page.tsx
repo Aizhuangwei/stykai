@@ -281,10 +281,64 @@ export default function Home() {
       {/* SEO Pages */}
       <section className="max-w-7xl mx-auto px-4 mb-16">
         <h2 className="text-xl sm:text-2xl font-bold mb-6">🔥 Popular SEO Pages</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        
+        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Top Alternatives</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          <Link href="/seo/chatgpt-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 ChatGPT Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">Claude, DeepSeek, Gemini & more</p>
+          </Link>
+          <Link href="/seo/claude-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Claude Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">ChatGPT, DeepSeek, Gemini & more</p>
+          </Link>
+          <Link href="/seo/cursor-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Cursor Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">Copilot, Windsurf, Zed AI & more</p>
+          </Link>
+          <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Midjourney Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">DALL-E 3, Stable Diffusion & more</p>
+          </Link>
+          <Link href="/seo/perplexity-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Perplexity Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">You.com, Consensus, Elicit & more</p>
+          </Link>
+          <Link href="/seo/deepseek-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 DeepSeek Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">ChatGPT, Claude, Gemini & more</p>
+          </Link>
+          <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Notion AI Alternatives</h3>
+            <p className="text-xs text-gray-500 mt-1">Mem.ai, Taskade & more tools</p>
+          </Link>
+        </div>
+
+        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Head-to-Head Comparisons</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          <Link href="/seo/chatgpt-vs-claude" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ ChatGPT vs Claude</h3>
+            <p className="text-xs text-gray-500 mt-1">Which AI assistant wins?</p>
+          </Link>
+          <Link href="/seo/claude-vs-gemini" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Claude vs Gemini</h3>
+            <p className="text-xs text-gray-500 mt-1">Claude vs Google Gemini compared</p>
+          </Link>
+          <Link href="/seo/cursor-vs-windsurf" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Cursor vs Windsurf</h3>
+            <p className="text-xs text-gray-500 mt-1">AI code editor showdown</p>
+          </Link>
+          <Link href="/seo/midjourney-vs-dalle" className="card-base p-4 group">
+            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Midjourney vs DALL-E 3</h3>
+            <p className="text-xs text-gray-500 mt-1">Which image generator wins?</p>
+          </Link>
+        </div>
+
+        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Curated Collections</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <Link href="/seo/best-ai-tools" className="card-base p-4 group">
             <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏆 Best AI Tools 2026</h3>
-            <p className="text-xs text-gray-500 mt-1">82+ AI tools curated with real reviews</p>
+            <p className="text-xs text-gray-500 mt-1">All tools curated with real reviews</p>
           </Link>
           <Link href="/seo/ai-writing-tools" className="card-base p-4 group">
             <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">✍️ AI Writing Tools Top 10</h3>
@@ -296,27 +350,7 @@ export default function Home() {
           </Link>
           <Link href="/seo/ai-tools-for-business" className="card-base p-4 group">
             <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🏢 AI Tools for Business</h3>
-            <p className="text-xs text-gray-500 mt-1">Boost productivity with enterprise AI</p>
-          </Link>
-          <Link href="/seo/chatgpt-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 ChatGPT Alternatives</h3>
-            <p className="text-xs text-gray-500 mt-1">Claude, DeepSeek, Gemini & more</p>
-          </Link>
-          <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Midjourney Alternatives</h3>
-            <p className="text-xs text-gray-500 mt-1">DALL-E 3, Stable Diffusion & more</p>
-          </Link>
-          <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">🔄 Notion AI Alternatives</h3>
-            <p className="text-xs text-gray-500 mt-1">Mem.ai, Taskade & more tools</p>
-          </Link>
-          <Link href="/seo/chatgpt-vs-claude" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ ChatGPT vs Claude</h3>
-            <p className="text-xs text-gray-500 mt-1">Which AI assistant is right for you?</p>
-          </Link>
-          <Link href="/seo/midjourney-vs-dalle" className="card-base p-4 group">
-            <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">⚔️ Midjourney vs DALL-E 3</h3>
-            <p className="text-xs text-gray-500 mt-1">Which AI image generator wins?</p>
+            <p className="text-xs text-gray-500 mt-1">Boost productivity with AI</p>
           </Link>
         </div>
       </section>

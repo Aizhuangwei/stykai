@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.stykai.com'),
   title: "Best AI Tools 2026 | Discover Top AI Tools for Writing, Design & Business",
   description: "Explore the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, AI image generators, coding assistants, and more. Find the perfect AI tool for your needs.",
   keywords: "AI tools, best AI tools, AI tools 2026, ChatGPT alternatives, AI writing, AI design, AI coding",
@@ -11,6 +12,9 @@ export const metadata: Metadata = {
     description: "Explore the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, and more.",
     type: "website",
     siteName: "STYK Ai",
+  },
+  alternates: {
+    canonical: '/',
   },
 };
 
@@ -32,6 +36,29 @@ export default function RootLayout({
             gtag('config', 'G-49H18XJW7G');
           `}
         </Script>
+
+        {/* WebSite Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'STYK Ai',
+              url: 'https://www.stykai.com',
+              description: 'Discover the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, AI image generators, coding assistants, and more.',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: {
+                  '@type': 'EntryPoint',
+                  urlTemplate: 'https://www.stykai.com/?s={search_term_string}',
+                },
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
+
         {children}
       </body>
     </html>

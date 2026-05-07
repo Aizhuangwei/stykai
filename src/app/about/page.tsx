@@ -1,5 +1,14 @@
 import Header from '@/components/Header';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About STYK Ai | AI Tools Navigation & Reviews',
+  description: 'STYK Ai curates the best AI tools with honest reviews and comparisons. Discover, compare, and choose the right AI tools.',
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 export default function AboutPage() {
   return (

@@ -22,6 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: page.title,
       description: page.description,
     },
+    alternates: {
+      canonical: `/seo/${id}`,
+    },
   };
 }
 
@@ -64,6 +67,30 @@ export default async function SeoPage({ params }: Props) {
     pageTools = [tools.find(t => t.id === 'chatgpt'), tools.find(t => t.id === 'claude')].filter(Boolean) as typeof tools;
   } else if (id === 'midjourney-vs-dalle') {
     pageTools = [tools.find(t => t.id === 'midjourney'), tools.find(t => t.id === 'dalle-3')].filter(Boolean) as typeof tools;
+  } else if (id === 'claude-alternatives') {
+    const claude = tools.find(t => t.id === 'claude');
+    pageTools = claude
+      ? tools.filter(t => t.id !== 'claude' && t.category === claude.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'cursor-alternatives') {
+    const cursor = tools.find(t => t.id === 'cursor');
+    pageTools = cursor
+      ? tools.filter(t => t.id !== 'cursor' && t.category === cursor.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'perplexity-alternatives') {
+    const perplexity = tools.find(t => t.id === 'perplexity');
+    pageTools = perplexity
+      ? tools.filter(t => t.id !== 'perplexity' && t.category === perplexity.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'deepseek-alternatives') {
+    const deepseek = tools.find(t => t.id === 'deepseek');
+    pageTools = deepseek
+      ? tools.filter(t => t.id !== 'deepseek' && t.category === deepseek.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'cursor-vs-windsurf') {
+    pageTools = [tools.find(t => t.id === 'cursor'), tools.find(t => t.id === 'windsurf')].filter(Boolean) as typeof tools;
+  } else if (id === 'claude-vs-gemini') {
+    pageTools = [tools.find(t => t.id === 'claude'), tools.find(t => t.id === 'gemini')].filter(Boolean) as typeof tools;
   }
 
   // All known SEO page IDs for internal links

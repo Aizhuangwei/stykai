@@ -1271,6 +1271,81 @@ export const tools: Tool[] = [
     score: 8.6,
   },
 
+  {
+    id: 'ruflo',
+    name: 'Ruflo',
+    description: 'Leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems with RAG integration, self-learning swarm intelligence, and native Claude Code / Codex integration.',
+    shortDesc: 'Multi-agent orchestration platform for Claude',
+    url: 'https://ruv.net',
+    category: 'code',
+    tags: ['AI Agent', 'Multi-Agent', 'Claude', 'Orchestration', 'Automation'],
+    pricing: 'free',
+    useCases: ['Multi-Agent Development', 'Workflow Automation', 'Conversational AI', 'RAG Systems', 'Enterprise Automation'],
+    prosCons: { pros: ['Multi-agent swarms', 'Self-learning intelligence', 'RAG integration', 'Claude Code integration', 'Open source'], cons: ['New platform', 'Requires Claude Code', 'Complex setup', 'Evolving rapidly', 'Limited documentation'] },
+    officialUrl: 'https://ruv.net/ruflo',
+    score: 8.7,
+  },
+
+  {
+    id: 'pixelle-video',
+    name: 'Pixelle-Video',
+    description: 'AI automated short video engine that transforms a simple topic into a complete video in 3 minutes. Features AI script writing, image generation, voice synthesis, and background music orchestration. Fully open source.',
+    shortDesc: 'AI fully automated short video engine',
+    url: 'https://aidc-ai.github.io/Pixelle-Video/',
+    category: 'video',
+    tags: ['AI Video', 'Short Video', 'Automation', 'Open Source', 'Script Generation'],
+    pricing: 'free',
+    useCases: ['Short Video Production', 'Social Media Content', 'Automated Video Creation', 'Marketing Videos', 'Content Repurposing'],
+    prosCons: { pros: ['Fully automated', 'Free and open source', 'AI voice synthesis', 'Background music', 'Customizable templates'], cons: ['GitHub based', 'Requires setup', 'GPU needed for local', 'Quality varies', 'New platform'] },
+    officialUrl: 'https://aidc-ai.github.io/Pixelle-Video/',
+    score: 8.5,
+  },
+
+  {
+    id: 'local-deep-research',
+    name: 'Local Deep Research',
+    description: 'AI-powered research assistant that performs systematic, iterative research using multiple LLMs and search engines. Achieves ~95% on SimpleQA. Runs locally for privacy with full data control. Supports 10+ search engines including arXiv, PubMed, and private documents.',
+    shortDesc: 'Private local AI research assistant',
+    url: 'https://github.com/LearningCircuit/local-deep-research',
+    category: 'search',
+    tags: ['AI Research', 'Local AI', 'Privacy', 'Open Source', 'Academic Research'],
+    pricing: 'free',
+    useCases: ['Academic Research', 'Deep Web Research', 'Literature Review', 'Competitive Analysis', 'Fact Checking'],
+    prosCons: { pros: ['Fully private', 'Local execution', 'Multi-LLM support', 'High accuracy', 'Multiple search engines'], cons: ['Requires Docker', 'GPU recommended', 'Setup complexity', 'New project', 'Command-line interface'] },
+    officialUrl: 'https://github.com/LearningCircuit/local-deep-research',
+    score: 8.6,
+  },
+
+  {
+    id: 'trading-agents',
+    name: 'TradingAgents',
+    description: 'Multi-Agent LLM Financial Trading Framework by Tauric Research. Deploys specialized AI agents for market analysis, risk assessment, portfolio optimization, and trade execution with coordinated decision-making.',
+    shortDesc: 'Multi-agent AI financial trading framework',
+    url: 'https://github.com/TauricResearch/TradingAgents',
+    category: 'code',
+    tags: ['AI Trading', 'Multi-Agent', 'Financial AI', 'Open Source', 'Quantitative Analysis'],
+    pricing: 'free',
+    useCases: ['Algorithmic Trading', 'Market Analysis', 'Portfolio Management', 'Risk Assessment', 'Financial Research'],
+    prosCons: { pros: ['Multi-agent architecture', 'Open source', 'Financial specialization', 'Active development', 'Strong community'], cons: ['High complexity', 'Financial risk', 'Requires domain knowledge', 'Experimental', 'No guarantee'] },
+    officialUrl: 'https://github.com/TauricResearch/TradingAgents',
+    score: 8.4,
+  },
+
+  {
+    id: 'cocoindex',
+    name: 'CocoIndex',
+    description: 'Incremental engine for long horizon AI agents. Enables agents to maintain persistent, growing memory and context across extended sessions. Built for complex multi-step tasks that span hours or days.',
+    shortDesc: 'Incremental engine for long-horizon AI agents',
+    url: 'https://cocoindex.io',
+    category: 'code',
+    tags: ['AI Agent', 'Memory', 'Agent Framework', 'Long Context', 'Open Source'],
+    pricing: 'free',
+    useCases: ['Long-Horizon Tasks', 'Agent Memory Management', 'Persistent Context', 'Complex Workflows', 'Session Persistence'],
+    prosCons: { pros: ['Long context support', 'Incremental architecture', 'Open source', 'Agent-native design', 'Growing ecosystem'], cons: ['New project', 'Early stage', 'Limited documentation', 'Smaller community', 'API evolving'] },
+    officialUrl: 'https://cocoindex.io',
+    score: 8.3,
+  },
+
 ];
 
 // Update category counts
@@ -1343,10 +1418,10 @@ export function slugify(name: string): string {
 export function getSeoPageData() {
   return {
     'best-ai-tools': {
-      title: 'Best AI Tools 2026 - Top 82+ Ranked & Reviewed',
-      description: 'Discover 82+ best AI tools across 8 categories with real ratings and pros & cons analysis. Find the perfect AI tool for you.',
+      title: 'Best AI Tools 2026 - Top 88+ Ranked & Reviewed',
+      description: 'Discover 88+ best AI tools across 8 categories with real ratings and pros & cons analysis. Find the perfect AI tool for you.',
       h1: 'Best AI Tools 2026: Top Picks Ranked & Reviewed',
-      intro: 'We curated 82+ of the best AI tools across every category. Below are our top recommendations organized by category.',
+      intro: 'We curated 88+ of the best AI tools across every category. Below are our top recommendations organized by category.',
     },
     'ai-writing-tools': {
       title: 'Best AI Writing Tools 2026 - Top 10 Compared',
@@ -1395,6 +1470,48 @@ export function getSeoPageData() {
       description: 'Comprehensive Midjourney vs DALL-E 3 comparison: image quality, text rendering, pricing, user experience.',
       h1: 'Midjourney vs DALL-E 3: Detailed Comparison',
       intro: 'Midjourney and DALL-E 3 are the two leading AI image generation tools. They have different styles and strengths.',
+    },
+
+    // === NEW ALTERNATIVES PAGES (May 7) ===
+
+    'claude-alternatives': {
+      title: 'Best Claude Alternatives 2026 - Top 10+ AI Assistants Compared',
+      description: 'Looking for Claude alternatives? Compare ChatGPT, DeepSeek, Gemini, Perplexity, Grok and more. Full feature, pricing, and pros & cons analysis.',
+      h1: 'Best Claude Alternatives',
+      intro: 'Claude excels at long-form analysis and safe conversations, but other AI assistants have unique strengths. Here are the best Claude alternatives to consider.',
+    },
+    'cursor-alternatives': {
+      title: 'Best Cursor Alternatives 2026 - Top AI Coding Tools Compared',
+      description: 'Looking for Cursor alternatives? Compare GitHub Copilot, Windsurf, Zed AI, Claude Code, and more. Find the best AI coding assistant for your workflow.',
+      h1: 'Best Cursor Alternatives',
+      intro: 'Cursor is excellent, but other AI coding tools offer different strengths. Here are the best alternatives to Cursor for AI-assisted development.',
+    },
+    'perplexity-alternatives': {
+      title: 'Best Perplexity Alternatives 2026 - Top AI Search Tools Compared',
+      description: 'Looking for Perplexity alternatives? Compare You.com, Consensus, Elicit, Phind, and more. Find the best AI search engine for research.',
+      h1: 'Best Perplexity Alternatives',
+      intro: 'Perplexity is a leading AI search engine, but other tools offer unique research capabilities. Here are the best alternatives to consider.',
+    },
+    'deepseek-alternatives': {
+      title: 'Best DeepSeek Alternatives 2026 - Top Reasoning AI Models Compared',
+      description: 'Looking for DeepSeek alternatives? Compare ChatGPT, Claude, Gemini, Grok and more AI models for reasoning and coding tasks.',
+      h1: 'Best DeepSeek Alternatives',
+      intro: 'DeepSeek excels at mathematical reasoning and coding. However, other AI models have unique strengths worth exploring.',
+    },
+
+    // === NEW COMPARISON PAGES (May 7) ===
+
+    'cursor-vs-windsurf': {
+      title: 'Cursor vs Windsurf 2026: Which AI Code Editor Is Better?',
+      description: 'Comprehensive Cursor vs Windsurf comparison: features, pricing, AI models, user experience. Decide which AI code editor best fits your development workflow.',
+      h1: 'Cursor vs Windsurf: Detailed Comparison',
+      intro: 'Cursor and Windsurf are the two leading AI-native code editors. Each has unique strengths for different development styles.',
+    },
+    'claude-vs-gemini': {
+      title: 'Claude vs Gemini 2026: Detailed Comparison - Which Is Better?',
+      description: 'Comprehensive Claude vs Gemini comparison: context window, reasoning, multimodal capabilities, pricing, and use cases.',
+      h1: 'Claude vs Gemini: Detailed Comparison',
+      intro: 'Claude and Gemini are competing AI assistants from Anthropic and Google. Each has distinct strengths in different scenarios.',
     },
   };
 }

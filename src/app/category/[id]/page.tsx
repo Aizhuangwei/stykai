@@ -11,8 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categories.find(c => c.id === id);
   if (!cat) return {};
   return {
-    title: `${cat.icon} ${cat.name} AI Tools - STYK Ai`,
+    title: `${cat.icon} Best ${cat.name} Tools 2026 - Reviews & Comparison | STYK Ai`,
     description: `Best ${cat.name} AI tools with ratings, pros & cons. Discover the best ${cat.name} tools.`,
+    alternates: {
+      canonical: `/category/${id}`,
+    },
   };
 }
 

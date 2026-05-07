@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${tool.name} Review - Features, Pricing, Pros & Cons`,
       description: `${tool.description.slice(0, 160)}`,
     },
+    alternates: {
+      canonical: `/tools/${id}/review`,
+    },
   };
 }
 

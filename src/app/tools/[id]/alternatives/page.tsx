@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${tool.name} AlternativesRecommended`,
       description: `Looking for ${tool.name}  best alternatives with comprehensive comparison.`,
     },
+    alternates: {
+      canonical: `/tools/${id}/alternatives`,
+    },
   };
 }
 
@@ -172,9 +175,21 @@ export default async function AlternativesPage({ params }: Props) {
               <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">ChatGPT Alternatives</h3>
               <p className="text-xs text-gray-500 mt-1">Looking for ChatGPT alternatives? Compare Claude, DeepSeek and more</p>
             </Link>
+            <Link href="/seo/claude-alternatives" className="card-base p-4 group">
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Claude Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for Claude alternatives? Compare ChatGPT, Gemini and more</p>
+            </Link>
+            <Link href="/seo/cursor-alternatives" className="card-base p-4 group">
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Cursor Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for Cursor alternatives? Compare Copilot, Windsurf and more</p>
+            </Link>
             <Link href="/seo/midjourney-alternatives" className="card-base p-4 group">
               <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Midjourney Alternatives</h3>
               <p className="text-xs text-gray-500 mt-1">Looking for Midjourney alternatives? Compare DALL-E 3, SD and more</p>
+            </Link>
+            <Link href="/seo/perplexity-alternatives" className="card-base p-4 group">
+              <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Perplexity Alternatives</h3>
+              <p className="text-xs text-gray-500 mt-1">Looking for Perplexity alternatives? Compare You.com, Elicit and more</p>
             </Link>
             <Link href="/seo/notion-ai-alternatives" className="card-base p-4 group">
               <h3 className="text-sm font-semibold group-hover:text-cyan-400 transition-colors">Notion AI Alternatives</h3>

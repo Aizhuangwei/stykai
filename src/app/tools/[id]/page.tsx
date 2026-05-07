@@ -16,6 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${tool.name} Review - ${tool.score}/10 | STYK Ai`,
       description: `${tool.shortDesc}. Pros: ${tool.prosCons.pros.slice(0, 2).join(', ')}.`,
     },
+    alternates: {
+      canonical: `/tools/${id}`,
+    },
   };
 }
 

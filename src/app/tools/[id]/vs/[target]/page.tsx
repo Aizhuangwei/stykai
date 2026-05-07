@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${toolA.name} vs ${toolB.name} Detailed Comparison`,
       description: `${toolA.name}（${toolA.score}/10）vs ${toolB.name}（${toolB.score}/10） comprehensive comparison.`,
     },
+    alternates: {
+      canonical: `/tools/${id}/vs/${target}`,
+    },
   };
 }
 
