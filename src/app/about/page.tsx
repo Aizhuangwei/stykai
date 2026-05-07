@@ -57,8 +57,8 @@ export default function AboutPage() {
             <ul className="space-y-2 text-sm">
               <li>
                 <span className="text-gray-500">📧 Email: </span>
-                <a href="mailto:aizhuangwei@gmail.com" className="text-cyan-400 hover:underline">
-                  aizhuangwei@gmail.com
+                <a href="mailto:hello@stykai.com" className="text-cyan-400 hover:underline">
+                  hello@stykai.com
                 </a>
               </li>
               <li>
