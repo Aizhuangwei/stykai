@@ -88,9 +88,21 @@ export default async function SeoPage({ params }: Props) {
       ? tools.filter(t => t.id !== 'deepseek' && t.category === deepseek.category).sort((a, b) => (b.score || 0) - (a.score || 0))
       : [];
   } else if (id === 'cursor-vs-windsurf') {
-    pageTools = [tools.find(t => t.id === 'cursor'), tools.find(t => t.id === 'windsurf')].filter(Boolean) as typeof tools;
+    pageTools = [tools.find(t => t.id === 'cursor'), tools.find(t => t.id === 'codeium')].filter(Boolean) as typeof tools;
   } else if (id === 'claude-vs-gemini') {
     pageTools = [tools.find(t => t.id === 'claude'), tools.find(t => t.id === 'gemini')].filter(Boolean) as typeof tools;
+  } else if (id === 'github-copilot-alternatives') {
+    const gh = tools.find(t => t.id === 'github-copilot');
+    pageTools = gh
+      ? tools.filter(t => t.id !== 'github-copilot' && t.category === gh.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'dalle-alternatives') {
+    const dalle = tools.find(t => t.id === 'dalle-3');
+    pageTools = dalle
+      ? tools.filter(t => t.id !== 'dalle-3' && t.category === dalle.category).sort((a, b) => (b.score || 0) - (a.score || 0))
+      : [];
+  } else if (id === 'devin-vs-cursor') {
+    pageTools = [tools.find(t => t.id === 'devin'), tools.find(t => t.id === 'cursor')].filter(Boolean) as typeof tools;
   }
 
   // All known SEO page IDs for internal links
