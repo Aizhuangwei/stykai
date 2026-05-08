@@ -21,11 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Tool pages
   for (const tool of tools) {
+    // Hot tools (score >= 9.0) get crawled more frequently
+    const isHotTool = (tool.score || 0) >= 9.0;
     entries.push({
       url: `${baseUrl}/tools/${tool.id}`,
       lastModified: today,
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      changeFrequency: isHotTool ? 'weekly' : 'monthly',
+      priority: isHotTool ? 1.0 : 0.9,
     });
   }
 

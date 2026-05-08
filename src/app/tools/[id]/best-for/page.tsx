@@ -396,8 +396,20 @@ export default async function BestForPage({ params }: Props) {
     },
   };
 
+  const bestForBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'STYK Ai', item: 'https://www.stykai.com/' },
+      { '@type': 'ListItem', position: 2, name: tool.name, item: `https://www.stykai.com/tools/${tool.id}` },
+      { '@type': 'ListItem', position: 3, name: `${tool.name} Best For`, item: `https://www.stykai.com/tools/${tool.id}/best-for` },
+    ],
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bestForBreadcrumb) }} />
+      <div className="min-h-screen">
       {/* Header */}
       <header className="border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -540,5 +552,6 @@ export default async function BestForPage({ params }: Props) {
         <p>© 2026 STYK Ai. AI Tools Navigation.</p>
       </footer>
     </div>
+    </>
   );
 }

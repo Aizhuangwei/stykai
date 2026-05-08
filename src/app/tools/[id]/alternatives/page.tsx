@@ -35,8 +35,38 @@ export default async function AlternativesPage({ params }: Props) {
   const alternatives = getAlternatives(tool, 6);
   const count = alternatives.length;
 
+  const breadcrumbAltData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'STYK Ai', item: 'https://www.stykai.com/' },
+      { '@type': 'ListItem', position: 2, name: tool.name, item: `https://www.stykai.com/tools/${tool.id}` },
+      { '@type': 'ListItem', position: 3, name: `${tool.name} Alternatives`, item: `https://www.stykai.com/tools/${tool.id}/alternatives` },
+    ],
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbAltData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: `${tool.name} Alternatives`,
+        description: `Best alternatives to ${tool.name}`,
+        url: `https://www.stykai.com/tools/${tool.id}/alternatives`,
+        numberOfItems: alternatives.length,
+        itemListElement: alternatives.map((alt, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: {
+            '@type': 'SoftwareApplication',
+            name: alt.name,
+            url: `https://www.stykai.com/tools/${alt.id}`,
+            description: alt.shortDesc,
+          },
+        })),
+      })}} />
+      <div className="min-h-screen">
       {/* Header */}
       <header className="border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -221,5 +251,6 @@ export default async function AlternativesPage({ params }: Props) {
         <p>© 2026 STYK Ai. AI Tools Navigation.</p>
       </footer>
     </div>
+    </>
   );
 }

@@ -42,6 +42,47 @@ export default async function CategoryPage({ params }: Props) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-12">
+        {/* BreadcrumbList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'STYK Ai', item: 'https://www.stykai.com' },
+                { '@type': 'ListItem', position: 2, name: cat.name, item: `https://www.stykai.com/category/${id}` },
+              ],
+            }),
+          }}
+        />
+
+        {/* ItemList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: `Best ${cat.name} AI Tools 2026`,
+              description: `Best ${cat.name} AI tools with ratings, pros & cons.`,
+              url: `https://www.stykai.com/category/${id}`,
+              numberOfItems: sortedTools.length,
+              itemListElement: sortedTools.map((tool, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'SoftwareApplication',
+                  name: tool.name,
+                  url: `https://www.stykai.com/tools/${tool.id}`,
+                  description: tool.shortDesc,
+                  applicationCategory: 'BusinessApplication',
+                },
+              })),
+            }),
+          }}
+        />
+
         {/* Category header */}
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-2">

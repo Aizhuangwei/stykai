@@ -1887,6 +1887,36 @@ export const tools: Tool[] = [
     officialUrl: 'https://www.rask.ai',
     score: 8.5,
   },
+
+  {
+    id: 'openai-symphony',
+    name: 'OpenAI Symphony',
+    description: 'OpenAI\'s project orchestration framework that turns project work into isolated, autonomous implementation runs. Allows teams to manage work instead of supervising coding agents. Built with Elixir, open-source on GitHub with 22k+ stars. Features autonomous agent runs, project isolation, team workflow management, and native Codex integration.',
+    shortDesc: 'Open-source project orchestration for autonomous coding agents',
+    url: 'https://github.com/openai/symphony',
+    category: 'code',
+    tags: ['AI Agents', 'Orchestration', 'Open Source', 'Codex', 'Project Management'],
+    pricing: 'free',
+    useCases: ['Agent Orchestration', 'Autonomous Code Runs', 'Team Workflow', 'Project Automation', 'Agent Management'],
+    prosCons: { pros: ['Open source', '22k+ GitHub stars', 'Enterprise-grade design', 'OpenAI backed', 'Codex integration'], cons: ['Early stage', 'Elixir-specific', 'Requires Codex setup', 'Limited documentation', 'Steep learning curve'] },
+    officialUrl: 'https://github.com/openai/symphony',
+    score: 8.4,
+  },
+
+  {
+    id: 'ace-step-ui',
+    name: 'Ace-Step-UI',
+    description: 'The ultimate open-source Suno alternative. Professional UI for ACE-Step 1.5 AI music generation. Fully free, local, and unlimited music generation directly in the browser. Supports text-to-music generation with professional-grade output quality. Completely self-hosted with no usage limits, making it a powerful alternative to paid AI music tools like Suno.',
+    shortDesc: 'Open-source Suno alternative for AI music generation',
+    url: 'https://github.com/fspecii/ace-step-ui',
+    category: 'audio',
+    tags: ['AI Music', 'Music Generation', 'Open Source', 'Suno Alternative', 'Self-Hosted'],
+    pricing: 'free',
+    useCases: ['Music Creation', 'Content Background Music', 'Song Production', 'Audio Prototyping', 'Creative Sound Design'],
+    prosCons: { pros: ['Completely free', 'Open source', 'Local/unlimited usage', 'Professional UI', 'No subscriptions'], cons: ['Early stage', 'Requires local setup', 'Smaller community', 'Limited genres', 'No SaaS option'] },
+    officialUrl: 'https://github.com/fspecii/ace-step-ui',
+    score: 8.3,
+  },
 ];
 
 // Update category counts
