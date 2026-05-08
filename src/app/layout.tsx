@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     description: "Explore the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, and more.",
     type: "website",
     siteName: "STYK Ai",
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Best AI Tools 2026 | STYK Ai',
     description: 'Explore the best AI tools in 2026.',
-    images: ['/og-image.png'],
+    images: ['/opengraph-image'],
   },
   alternates: {
     canonical: '/',
