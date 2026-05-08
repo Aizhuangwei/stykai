@@ -130,6 +130,33 @@ export default async function SeoPage({ params }: Props) {
           <span className="text-gray-300">{page.h1}</span>
         </div>
 
+        {/* ItemList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: page.h1,
+              description: page.description,
+              url: `https://www.stykai.com/seo/${id}`,
+              numberOfItems: pageTools.length,
+              itemListElement: pageTools.map((tool, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'SoftwareApplication',
+                  name: tool.name,
+                  url: `https://www.stykai.com/tools/${tool.id}`,
+                  description: tool.shortDesc,
+                  applicationCategory: tool.category === 'writing' ? 'Multimedia' :
+                    tool.category === 'code' ? 'DeveloperApplication' : 'BusinessApplication',
+                },
+              })),
+            }),
+          }}
+        />
+
         {/* Hero */}
         <div className="mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-4">{page.h1}</h1>
