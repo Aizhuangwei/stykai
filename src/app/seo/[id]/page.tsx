@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { tools, getSeoPageData, getToolsByCategory } from '@/lib/tools';
+import AdSense, { AD_SLOTS } from '@/components/AdSense';
 import ToolCard from '@/components/ToolCard';
 
 interface Props { params: Promise<{ id: string }> }
@@ -123,6 +124,9 @@ export default async function SeoPage({ params }: Props) {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 py-10">
+        {/* AdSense Top Banner */}
+        <AdSense slot={AD_SLOTS.TOP_BANNER} format="horizontal" style={{ marginBottom: '2rem' }} />
+
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>

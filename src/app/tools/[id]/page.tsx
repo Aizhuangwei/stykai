@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation';
 import { tools, categories, generateFAQs, getRelatedTools, getAlternatives, outboundLink } from '@/lib/tools';
+import { getAffiliateUrl, getAffiliateLabel } from '@/lib/affiliate';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import AdSense, { AD_SLOTS } from '@/components/AdSense';
 
 interface Props { params: Promise<{ id: string }> }
 
@@ -33,9 +35,10 @@ export default async function ToolPage({ params }: Props) {
   const relatedTools = getRelatedTools(tool, 4);
   const alternatives = getAlternatives(tool, 3);
   const faqs = generateFAQs(tool);
-  const officialLink = outboundLink(tool.officialUrl || tool.url, `${tool.name} Official`);
-  const freeTrialLink = outboundLink(tool.url, `Free Trial of ${tool.name}`);
-  const pricingLink = outboundLink(tool.officialUrl || tool.url, `${tool.name} Pricing`);
+  const affiliate = getAffiliateUrl(tool.id, tool.officialUrl);
+  const officialLink = outboundLink(affiliate.url, `${tool.name} Official`, tool.id);
+  const freeTrialLink = outboundLink(tool.url, getAffiliateLabel(tool.id, tool.pricing), tool.id);
+  const pricingLink = outboundLink(tool.officialUrl || tool.url, `${tool.name} Pricing`, tool.id);
 
   const pricingMap: Record<string, { label: string; color: string }> = {
     free: { label: 'Free', color: 'text-green-400 bg-green-500/10 border border-green-500/20' },
@@ -141,7 +144,10 @@ export default async function ToolPage({ params }: Props) {
             <p className="text-lg text-gray-400 max-w-3xl">{tool.shortDesc}</p>
           </div>
 
-          {/* CTA Buttons (Conversion Points) */}
+          {/* AdSense Top Banner */}
+        <AdSense slot={AD_SLOTS.TOP_BANNER} format="horizontal" style={{ marginBottom: '2rem' }} />
+
+        {/* CTA Buttons (Conversion Points) */}
           <div className="flex flex-wrap gap-3 mb-10">
             <a
               {...officialLink}
@@ -419,6 +425,11 @@ export default async function ToolPage({ params }: Props) {
               </div>
             </section>
           )}
+
+          {/* AdSense Content Middle */}
+          <section className="mt-10">
+            <AdSense slot={AD_SLOTS.CONTENT_MID} format="rectangle" />
+          </section>
 
           {/* Related Tools */}
           {relatedTools.length > 0 && (

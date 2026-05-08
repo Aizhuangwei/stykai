@@ -1931,8 +1931,10 @@ for (const cat of categories) {
 // === Phase 2: SEO & Affiliate Helpers ===
 
 export function outboundLink(url: string, label: string, trackingId?: string): { href: string; rel: string; target: string } {
-  const href = trackingId ? `${url}?ref=stykai&aid=${trackingId}` : `${url}?ref=stykai`;
-  return { href, rel: 'noopener noreferrer nofollow', target: '_blank' };
+  // Use tracking parameter for affiliate/referral tracking
+  const separator = url.includes('?') ? '&' : '?';
+  const href = trackingId ? `${url}${separator}ref=stykai&aid=${trackingId}` : url;
+  return { href, rel: 'noopener noreferrer nofollow sponsored', target: '_blank' };
 }
 
 export function getCategoryName(catId: string): string {

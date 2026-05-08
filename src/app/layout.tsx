@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen bg-[#0a0e1a] text-[#f1f5f9]">
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-49H18XJW7G"
           strategy="afterInteractive"
