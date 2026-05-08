@@ -50,9 +50,41 @@ export default async function AlternativesPage({ params }: Props) {
     ],
   };
 
+  const altCount = alternatives.length;
+  const topAlt = alternatives[0]?.name || 'similar tools';
+  const priceLabel = tool.pricing === 'free' ? 'free' : tool.pricing === 'freemium' ? 'free with paid plans' : 'paid';
+  const altFaqs = [
+    {
+      q: `Is ${tool.name} free?`,
+      a: `${tool.name} is ${priceLabel}. ${tool.pricing === 'free' ? 'You can use all features at no cost.' : tool.pricing === 'freemium' ? 'A free version is available with limited features. Paid plans unlock more capabilities.' : 'A paid subscription is required to use ${tool.name}.'}`,
+    },
+    {
+      q: `What are the best ${tool.name} alternatives in 2026?`,
+      a: `The best ${tool.name} alternatives include ${alternatives.slice(0, 4).map(a => a.name).join(', ')}. These tools offer similar features with different pricing, strengths, and use cases.`,
+    },
+    {
+      q: `What is better than ${tool.name}?`,
+      a: `${topAlt} is a top-rated alternative to ${tool.name}, offering competitive features${alternatives[0]?.score && tool.score ? ` with a rating of ${alternatives[0].score}/10 vs ${tool.name}'s ${tool.score}/10` : ''}. The best choice depends on your specific needs and budget.`,
+    },
+    {
+      q: `Why look for ${tool.name} alternatives?`,
+      a: `Users look for ${tool.name} alternatives because of ${tool.prosCons.cons.slice(0, 3).join(', ')}. Other tools may better fit your workflow, budget, or feature requirements.`,
+    },
+  ];
+  const altFaqData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: altFaqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbAltData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(altFaqData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'ItemList',
