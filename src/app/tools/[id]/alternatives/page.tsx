@@ -13,12 +13,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
+  const alternatives = getAlternatives(tool, 10);
+  const count = alternatives.length;
+  const altNames = count > 0 ? alternatives.slice(0, 2).map(a => a.name).join(', ') : '';
   return {
-    title: `${tool.name} Alternatives | Best Alternatives in 2026 | STYK Ai`,
-    description: `Looking for ${tool.name}  alternatives? We curated the best tools in the same category with feature and pros & cons comparison.`,
+    title: `${count} Best ${tool.name} Alternatives in 2026 ${altNames ? `(${altNames} & More) ` : ''}| STYK Ai`,
+    description: count > 0
+      ? `Don't settle? Compare ${count} proven ${tool.name} alternatives including ${altNames}. Side-by-side features, pricing (free vs paid), and real user ratings. Updated for 2026.`
+      : `Looking for ${tool.name} alternatives? We compared the best tools in the same category with feature and pros & cons analysis.`,
     openGraph: {
-      title: `${tool.name} AlternativesRecommended`,
-      description: `Looking for ${tool.name}  best alternatives with comprehensive comparison.`,
+      title: `${tool.name} Alternatives: ${count} Better Options Compared`,
+      description: `Compare ${count} top ${tool.name} alternatives with features, pricing & ratings.`,
     },
     alternates: {
       canonical: `/tools/${id}/alternatives`,

@@ -10,9 +10,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const cat = categories.find(c => c.id === id);
   if (!cat) return {};
+  const toolCount = tools.filter(t => t.category === id).length;
   return {
-    title: `${cat.icon} Best ${cat.name} Tools 2026 - Reviews & Comparison | STYK Ai`,
-    description: `Best ${cat.name} AI tools with ratings, pros & cons. Discover the best ${cat.name} tools.`,
+    title: `${cat.icon} Best ${cat.name} AI Tools 2026 — ${toolCount} Reviewed & Ranked | STYK Ai`,
+    description: `Find the best ${cat.name} AI tools in 2026. Compare ${toolCount}+ tools ranked by real ratings — features, pricing (free vs paid), and honest pros & cons. Updated for 2026.`,
     alternates: {
       canonical: `/category/${id}`,
     },

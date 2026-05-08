@@ -4,20 +4,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stykai.com'),
-  title: "Best AI Tools 2026 | Discover Top AI Tools for Writing, Design & Business",
-  description: "Explore the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, AI image generators, coding assistants, and more. Find the perfect AI tool for your needs.",
+  title: "125+ Best AI Tools Ranked & Reviewed (2026) | STYK Ai",
+  description: "Find the perfect AI tool in 2026. 125+ AI tools ranked by real ratings across 8 categories — ChatGPT alternatives, AI coding, design, writing & more. Honest pros, cons, and pricing. Updated daily.",
   keywords: "AI tools, best AI tools, AI tools 2026, ChatGPT alternatives, AI writing, AI design, AI coding",
   openGraph: {
-    title: "Best AI Tools 2026 | STYK Ai",
-    description: "Explore the best AI tools in 2026. Compare ChatGPT alternatives, AI writing tools, and more.",
+    title: "125+ Best AI Tools Ranked & Reviewed (2026) | STYK Ai",
+    description: "Find the perfect AI tool. 125+ AI tools ranked by real ratings — ChatGPT, Claude, DeepSeek & more. Updated daily.",
     type: "website",
     siteName: "STYK Ai",
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best AI Tools 2026 | STYK Ai',
-    description: 'Explore the best AI tools in 2026.',
+    title: '125+ Best AI Tools Ranked & Reviewed (2026) | STYK Ai',
+    description: '125+ AI tools ranked by real ratings across 8 categories. Find your perfect AI tool.',
     images: ['/opengraph-image'],
   },
   alternates: {
