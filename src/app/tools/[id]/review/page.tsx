@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
   return {
-    title: `${tool.name} Review | Features, Pricing, Pros & Cons | STYK Ai`,
-    description: `${tool.name} In-depth review: features, pros & cons, pricing, use cases. Rating ${tool.score}/10.`,
+    title: `${tool.name} Review & Alternatives 2026 | STYK Ai`,
+    description: `Explore ${tool.name} features, pricing, free alternatives, and full review. Rating ${tool.score}/10. Find the best AI tools on STYK Ai.`,
     openGraph: {
-      title: `${tool.name} Review - Features, Pricing, Pros & Cons`,
-      description: `${tool.description.slice(0, 160)}`,
+      title: `${tool.name} Review & Alternatives 2026 | STYK Ai`,
+      description: `Explore ${tool.name} features, pricing, and free alternatives. Rating ${tool.score}/10.`,
     },
     alternates: {
       canonical: `/tools/${id}/review`,

@@ -9,13 +9,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
-  const priceLabel = tool.pricing === 'free' ? '100% Free' : tool.pricing === 'freemium' ? 'Free + Paid Plans' : 'Paid Only';
+  const altTools = getAlternatives(tool, 3).map(a => a.name).join(', ');
+  const altSuffix = altTools ? ` (${altTools})` : '';
   return {
-    title: `${tool.name} Review 2026: Features, Pricing, Pros & Cons (${tool.score}/10) | STYK Ai`,
-    description: `Is ${tool.name} worth it in 2026? Hands-on review: ${tool.shortDesc}. ✅ Pros: ${tool.prosCons.pros.slice(0, 2).join(', ')}. ❌ Cons: ${tool.prosCons.cons[0] || 'N/A'}. 💰 ${priceLabel}. Rating: ${tool.score}/10.`,
+    title: `${tool.name} Review & Alternatives 2026 | STYK Ai`,
+    description: `Explore ${tool.name} features, pricing, free alternatives${altSuffix}, and full review. Find the best AI tools on STYK Ai.`,
     openGraph: {
-      title: `${tool.name} Review - ${tool.score}/10 | STYK Ai`,
-      description: `${tool.shortDesc}. Pros: ${tool.prosCons.pros.slice(0, 2).join(', ')}. Cons: ${tool.prosCons.cons.slice(0, 2).join(', ')}.`,
+      title: `${tool.name} Review & Alternatives 2026 | STYK Ai`,
+      description: `Explore ${tool.name} features, pricing, free alternatives, and full review. Rating ${tool.score}/10.`,
     },
     alternates: {
       canonical: `/tools/${id}`,

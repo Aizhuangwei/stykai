@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = tools.find(t => t.id === id);
   if (!tool) return {};
   return {
-    title: `${tool.name} Best For | Recommended Use Cases | STYK Ai`,
-    description: `Learn about ${tool.name} best use cases and how to use it.${tool.useCases.slice(0, 3).join(', ')} - find the best way to use it.`,
+    title: `${tool.name} Review & Alternatives 2026 | STYK Ai`,
+    description: `Explore ${tool.name} features, pricing, free alternatives, and best use cases. Find the best AI tools on STYK Ai.`,
     openGraph: {
       title: `${tool.name} Best Use Cases`,
       description: `${tool.name}  ${tool.useCases.length} best use cases analyzed.`,

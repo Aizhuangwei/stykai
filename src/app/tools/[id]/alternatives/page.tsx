@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const count = alternatives.length;
   const altNames = count > 0 ? alternatives.slice(0, 2).map(a => a.name).join(', ') : '';
   return {
-    title: `${count} Best ${tool.name} Alternatives in 2026 ${altNames ? `(${altNames} & More) ` : ''}| STYK Ai`,
+    title: `${tool.name} Alternatives 2026 — ${count} Best Options Compared | STYK Ai`,
     description: count > 0
-      ? `Don't settle? Compare ${count} proven ${tool.name} alternatives including ${altNames}. Side-by-side features, pricing (free vs paid), and real user ratings. Updated for 2026.`
-      : `Looking for ${tool.name} alternatives? We compared the best tools in the same category with feature and pros & cons analysis.`,
+      ? `Explore ${tool.name} alternatives, pricing, free options, and full review. Compare ${count} proven alternatives including ${altNames}. Find the best AI tools on STYK Ai.`
+      : `Explore ${tool.name} alternatives, pricing, free options, and full review. Find the best AI tools on STYK Ai.`,
     openGraph: {
-      title: `${tool.name} Alternatives: ${count} Better Options Compared`,
+      title: `${tool.name} Alternatives 2026 — ${count} Best Options Compared | STYK Ai`,
       description: `Compare ${count} top ${tool.name} alternatives with features, pricing & ratings.`,
     },
     alternates: {

@@ -74,7 +74,7 @@ export const tools: Tool[] = [
   {
     id: 'deepseek',
     name: 'DeepSeek',
-    description: 'An AI model by DeepSeek outstanding in programming and mathematical reasoning. DeepSeek-R1 delivers powerful reasoning with long context support.',
+    description: "DeepSeek is a Chinese AI model that has gained widespread recognition for its exceptional reasoning and mathematical capabilities, particularly through the DeepSeek-R1 series. As one of the most talked-about AI models in 2026, DeepSeek competes directly with OpenAI's GPT and Anthropic's Claude in coding and logical reasoning benchmarks, often matching or exceeding their performance at a fraction of the cost. Its key differentiator is outstanding performance in programming tasks, mathematical problem-solving, and logical reasoning, making it a go-to choice for developers, mathematicians, and researchers. DeepSeek offers API access that is significantly more affordable than comparable Western models, driving its rapid adoption in both enterprise and individual use cases. The model supports long context windows and delivers powerful reasoning through its R1 architecture. Features include advanced code generation, mathematical reasoning, logical deduction, and multi-turn conversation. While DeepSeek's ecosystem is smaller than GPT's and its multimodal capabilities are more limited, its combination of high performance and low cost makes it an attractive alternative for budget-conscious users. Pricing follows a freemium model with generous free tier via the chat interface and competitive API pricing.",
     shortDesc: 'Chinese AI model with outstanding reasoning ability',
     url: 'https://chat.deepseek.com',
     category: 'code',
@@ -89,7 +89,7 @@ export const tools: Tool[] = [
   {
     id: 'github-copilot',
     name: 'GitHub Copilot',
-    description: 'An AI programming assistant by GitHub powered by OpenAI Codex. Supports 2000+ languages integrated with VS Code, JetBrains and major IDEs.',
+    description: "GitHub Copilot is the most popular AI programming assistant in the world, developed by GitHub in collaboration with OpenAI and powered by the Codex model. Integrated seamlessly into major development environments including VS Code, JetBrains IDEs, Neovim, and Visual Studio, Copilot provides real-time code suggestions, completions, and generation across virtually every programming language. Its deep understanding of code context and intent makes it feel like a pair programmer who anticipates what you are about to write. Copilot excels at reducing boilerplate code, suggesting entire functions from comments, generating tests, and helping developers explore unfamiliar APIs and frameworks. The platform now offers Copilot Chat for natural language interactions, Copilot for Pull Requests to automate code reviews, and Copilot Workspace for larger-scale tasks. GitHub Copilot is particularly valuable for professional development teams, boosting productivity by 30-50% on common coding tasks according to user reports. Features include real-time code completion, AI chat, test generation, code review assistance, and multi-file editing. Pricing is $10/month for individuals and $19/month for business users with team features.",
     shortDesc: 'The most popular AI programming assistant',
     url: 'https://github.com/features/copilot',
     category: 'code',
@@ -119,7 +119,7 @@ export const tools: Tool[] = [
   {
     id: 'perplexity',
     name: 'Perplexity',
-    description: 'An AI search engine connecting to the internet in real-time with cited sources. Pro version supports GPT-4, Claude and model switching.',
+    description: "Perplexity is a next-generation AI-powered search engine that transforms how users find and verify information online. Unlike traditional search engines that return lists of links, Perplexity provides direct answers with real-time citations from across the web, making it one of the most popular AI search tools in 2026. Its core strength lies in combining large language model capabilities with live internet search, delivering comprehensive, sourced responses to complex queries. The Pro tier unlocks access to multiple advanced AI models including GPT-4, Claude, and custom Perplexity models, enabling deeper research capabilities. Perplexity has become an essential tool for students, researchers, and professionals who need accurate, cited information quickly. Features include AI-powered research papers, file upload for document analysis, and collections for organizing saved searches. Its clean, intuitive interface and focus on source transparency have earned it high marks from users seeking a reliable alternative to traditional search engines and general-purpose AI chatbots. Pricing follows a freemium model with generous free daily queries and a Pro subscription at $20/month for unlimited advanced features.",
     shortDesc: 'AI search engine with cited sources',
     url: 'https://perplexity.ai',
     category: 'search',
@@ -179,7 +179,7 @@ export const tools: Tool[] = [
   {
     id: 'leonardo',
     name: 'Leonardo AI',
-    description: 'An all-in-one AI creation platform with image generation, video and 3D texturing. Generous daily free credits, ideal for game assets.',
+    description: "Leonardo AI is a comprehensive AI creation platform that specializes in image generation, video creation, and 3D texture mapping, making it a versatile choice for artists, game developers, and content creators. Launched initially as an image generation tool, Leonardo has evolved into an all-in-one creative suite offering generous daily free credits, setting it apart from many competitors that limit free usage severely. Its 3D texture generation capability is particularly valuable for game asset creation, allowing designers to generate high-quality textures from simple prompts. The platform includes features like AI canvas for iterative editing, real-time generation for rapid prototyping, and community training models for custom styles. The community aspect allows users to share and remix creations, fostering a collaborative creative environment. Features include text-to-image generation, AI canvas with inpainting and outpainting, 3D texture generation, video generation, model training, and real-time drawing. Pricing follows a freemium model with 150 free daily credits and paid plans starting at $10/month for higher resolution and commercial use.",
     shortDesc: 'All-in-one AI creation platform',
     url: 'https://leonardo.ai',
     category: 'image',
@@ -464,7 +464,7 @@ export const tools: Tool[] = [
   {
     id: 'codeium',
     name: 'Codeium (Windsurf)',
-    description: 'Free AI code assistant with unlimited completions. 70+ languages, 40+ IDEs. Includes Windsurf IDE.',
+    description: "Codeium, now known as Windsurf, is a completely free AI code assistant that has gained significant traction among developers looking for a cost-effective alternative to GitHub Copilot. Offering unlimited code completions across 70+ programming languages and integration with 40+ IDEs and code editors, Codeium delivers impressive functionality without requiring a credit card or subscription. The platform has evolved to include Windsurf, a standalone AI-powered IDE that provides a complete development environment with deep AI integration. Codeium excels at code completion, code search across repositories, natural language-to-code translation, and intelligent code suggestions. Its unlimited free tier has made it particularly popular among students, hobbyists, and developers at startups with limited budgets. The platform's code search feature allows developers to find relevant code patterns across their entire codebase quickly. While Codeium may not match the accuracy of paid alternatives for niche use cases, its combination of zero cost and broad language support makes it compelling for everyday development needs. Features include AI code completion, natural language code generation, Windsurf IDE, code search, and multi-language support across 40+ IDEs.",
     shortDesc: 'Free AI code assistant',
     url: 'https://codeium.com',
     category: 'code',
@@ -509,7 +509,7 @@ export const tools: Tool[] = [
   {
     id: 'veed-io',
     name: 'VEED.io',
-    description: 'Browser-based AI video editing with auto captions, background removal, noise reduction and eye correction.',
+    description: "VEED.io is a browser-based AI video editing platform that has become the go-to solution for content creators, marketers, and businesses who need quick, professional-quality video editing without the complexity of traditional software. Operating entirely in the browser with no installation required, VEED.io makes video editing accessible to anyone with an internet connection. Its standout features include industry-leading auto-caption generation, background removal, noise reduction, and eye contact correction, all powered by AI. VEED.io excels at social media content creation, offering templates optimized for TikTok, Instagram Reels, YouTube Shorts, and LinkedIn videos. The platform's subtitle generator is widely regarded as one of the most accurate available, supporting multiple languages with customizable styles. Other key features include screen recording, video trimming, merging, audio editing, and text overlays. VEED.io is particularly popular for creating marketing videos, educational content, social media posts, and internal communications. Its intuitive drag-and-drop interface means users can produce polished videos in minutes. Pricing follows a freemium model with watermark on free exports, and paid plans starting at $24/month for watermark-free exports and advanced features.",
     shortDesc: 'Browser-based AI video editor',
     url: 'https://veed.io',
     category: 'video',
@@ -1079,7 +1079,7 @@ export const tools: Tool[] = [
   {
     id: 'n8n',
     name: 'n8n',
-    description: 'Open-source workflow automation tool that can be self-hosted. 400+ nodes with code control and privacy focus.',
+    description: "n8n is an open-source, self-hostable workflow automation platform that empowers users to connect applications, APIs, and services without writing code, while offering the flexibility of code-based customization when needed. With over 400 pre-built nodes connecting popular services like Google Workspace, Slack, GitHub, Stripe, and thousands of other tools through API integration, n8n provides a powerful alternative to closed-source automation platforms like Zapier and Make. The ability to self-host gives organizations complete control over their data, making n8n particularly attractive for businesses with strict data privacy requirements or compliance needs. n8n's visual workflow builder allows users to create complex automation sequences through a drag-and-drop interface, while its Node.js-based execution model enables custom JavaScript code integration for unlimited extensibility. The platform supports branching, looping, error handling, and webhook triggers for sophisticated workflow logic. Features include visual workflow builder, 400+ integrations, self-hosted deployment, webhook triggers, error handling, and CLI tools for development. Pricing follows a freemium model with the self-hosted community edition being completely free, while the cloud-hosted version starts at $20/month for advanced features and support.",
     shortDesc: 'Open-source self-hostable automation platform',
     url: 'https://n8n.io',
     category: 'code',
@@ -1199,7 +1199,7 @@ export const tools: Tool[] = [
   {
     id: 'grok',
     name: 'xAI Grok',
-    description: 'AI assistant by xAI connected to X/Twitter data in real-time. Answers questions and analyzes news.',
+    description: "Grok is xAI's real-time AI assistant deeply integrated with the X/Twitter ecosystem, designed for users who need instant access to current events, social media trends, and news analysis. Unlike traditional AI assistants, Grok draws directly from the X platform's vast real-time data stream, enabling it to answer questions about breaking news, trending topics, and social conversations as they unfold. Its distinctive personality combines humor with sharp analytical insights, setting it apart from more formal AI assistants. Grok excels at understanding context from social conversations, making it particularly valuable for journalists, analysts, and marketers tracking public discourse. The assistant can summarize lengthy threads, analyze sentiment from social media discussions, and provide context for rapidly evolving stories. Features include real-time web search, X/Twitter data integration, news analysis, and conversational Q&A. While Grok requires an X Premium subscription for full access, it offers a compelling option for users already within the X ecosystem who want AI assistance that understands the pulse of online conversations. Its fast response times and engaging interaction style have earned positive reviews from early adopters. Pricing follows a freemium model with limited free access and full features available through X Premium subscriptions.",
     shortDesc: 'xAI real-time AI assistant',
     url: 'https://grok.com',
     category: 'search',
