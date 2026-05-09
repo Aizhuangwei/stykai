@@ -31,6 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen bg-[#0a0e1a] text-[#f1f5f9]">
+        {/* Google AdSense */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4672255414360433"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-49H18XJW7G"
