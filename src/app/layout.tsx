@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import ConsentBanner from "@/components/ConsentBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stykai.com'),
@@ -74,6 +75,7 @@ export default function RootLayout({
         />
 
         {children}
+        <ConsentBanner />
       </body>
     </html>
   );
