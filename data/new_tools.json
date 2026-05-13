@@ -1,0 +1,28 @@
+[
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "description": "AI meeting assistant that transcribes and summarizes meetings.",
+    "shortDesc": "Meeting transcription AI",
+    "url": "https://otter.ai",
+    "category": "productivity",
+    "tags": [
+      "Meeting",
+      "Transcription"
+    ],
+    "pricing": "freemium",
+    "useCases": [
+      "Transcription"
+    ],
+    "prosCons": {
+      "pros": [
+        "Real-time"
+      ],
+      "cons": [
+        "Free limited"
+      ]
+    },
+    "officialUrl": "https://otter.ai",
+    "score": 9
+  }
+]
