@@ -1,0 +1,68 @@
+[
+  {
+    "id": 9,
+    "name": "Devin",
+    "slug": "devin",
+    "icon": "🦾",
+    "rating": 9.0,
+    "pricing": "paid",
+    "category": "AI Coding",
+    "trend": "+120%",
+    "up": true
+  },
+  {
+    "id": 7,
+    "name": "DeepSeek",
+    "slug": "deepseek",
+    "icon": "🧠",
+    "rating": 9.0,
+    "pricing": "free",
+    "category": "AI Chat",
+    "trend": "+85%",
+    "up": true
+  },
+  {
+    "id": 5,
+    "name": "Cursor",
+    "slug": "cursor",
+    "icon": "🟩",
+    "rating": 9.2,
+    "pricing": "freemium",
+    "category": "AI Coding",
+    "trend": "+65%",
+    "up": true
+  },
+  {
+    "id": 11,
+    "name": "Suno",
+    "slug": "suno",
+    "icon": "🎵",
+    "rating": 8.9,
+    "pricing": "freemium",
+    "category": "AI Audio",
+    "trend": "+45%",
+    "up": true
+  },
+  {
+    "id": 13,
+    "name": "Stable Diffusion",
+    "slug": "stable-diffusion",
+    "icon": "🌌",
+    "rating": 8.8,
+    "pricing": "free",
+    "category": "AI Image",
+    "trend": "+30%",
+    "up": true
+  },
+  {
+    "id": 15,
+    "name": "Sora",
+    "slug": "sora",
+    "icon": "🎬",
+    "rating": 8.5,
+    "pricing": "paid",
+    "category": "AI Video",
+    "trend": "+25%",
+    "up": true
+  }
+]

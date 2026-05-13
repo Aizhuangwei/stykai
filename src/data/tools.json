@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "tagline": "World's most versatile AI assistant",
+    "description": "ChatGPT by OpenAI — the #1 AI assistant for content, code, analysis, and more. Supports GPT-4o.",
+    "icon": "🤖",
+    "url": "https://chat.openai.com",
+    "pricing": "freemium",
+    "rating": 9.6,
+    "category": "AI Chat",
+    "tags": [
+      "AI",
+      "Chat",
+      "GPT-4",
+      "Multimodal"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Claude",
+    "slug": "claude",
+    "tagline": "Long-form text expert, safe & reliable",
+    "description": "Anthropic's Claude excels at long documents, code, and nuanced conversation. Best-in-class safety.",
+    "icon": "🟤",
+    "url": "https://claude.ai",
+    "pricing": "freemium",
+    "rating": 9.4,
+    "category": "AI Chat",
+    "tags": [
+      "AI",
+      "Chat",
+      "Long Text",
+      "Code",
+      "Safety"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "tagline": "Top AI image generation with artistic style",
+    "description": "Midjourney is the premier AI image generation tool with stunning artistic quality.",
+    "icon": "🎨",
+    "url": "https://midjourney.com",
+    "pricing": "paid",
+    "rating": 9.4,
+    "category": "AI Image",
+    "tags": [
+      "AI",
+      "Image",
+      "Art",
+      "Creation"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "GitHub Copilot",
+    "slug": "github-copilot",
+    "tagline": "Most popular AI programming assistant",
+    "description": "AI pair programmer integrating into VS Code, JetBrains. Real-time code suggestions.",
+    "icon": "🤖",
+    "url": "https://github.com/features/copilot",
+    "pricing": "paid",
+    "rating": 9.3,
+    "category": "AI Coding",
+    "tags": [
+      "AI",
+      "Coding",
+      "Programming",
+      "VS Code"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cursor",
+    "slug": "cursor",
+    "tagline": "AI-native code editor",
+    "description": "VS Code fork with deep AI integration. Codebase-aware, one-click refactoring, agent mode.",
+    "icon": "🟩",
+    "url": "https://cursor.com",
+    "pricing": "freemium",
+    "rating": 9.2,
+    "category": "AI Coding",
+    "tags": [
+      "AI",
+      "Editor",
+      "Code",
+      "Refactor"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "tagline": "AI search engine with cited sources",
+    "description": "AI-powered search with real-time answers and source citations. Great for research.",
+    "icon": "🔍",
+    "url": "https://perplexity.ai",
+    "pricing": "freemium",
+    "rating": 9.0,
+    "category": "AI Search",
+    "tags": [
+      "AI",
+      "Search",
+      "Research",
+      "Real-time"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "DeepSeek",
+    "slug": "deepseek",
+    "tagline": "Chinese AI with outstanding reasoning",
+    "description": "DeepSeek excels at mathematical reasoning and coding. Open-source models rival GPT-4.",
+    "icon": "🧠",
+    "url": "https://chat.deepseek.com",
+    "pricing": "free",
+    "rating": 9.0,
+    "category": "AI Chat",
+    "tags": [
+      "AI",
+      "Reasoning",
+      "Math",
+      "Coding"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "tagline": "Most realistic AI voice synthesis",
+    "description": "Industry-leading TTS with ultra-realistic voices, emotion control, multi-language.",
+    "icon": "🔊",
+    "url": "https://elevenlabs.io",
+    "pricing": "freemium",
+    "rating": 9.3,
+    "category": "AI Audio",
+    "tags": [
+      "AI",
+      "Audio",
+      "Voice",
+      "Synthesis"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Devin",
+    "slug": "devin",
+    "tagline": "First AI software engineer",
+    "description": "Cognition's Devin — the first fully autonomous AI software engineer.",
+    "icon": "🦾",
+    "url": "https://cognition.ai",
+    "pricing": "paid",
+    "rating": 9.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI",
+      "Programming",
+      "Agent",
+      "Autonomous"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "DALL-E 3",
+    "slug": "dalle-3",
+    "tagline": "OpenAI's text-to-image model",
+    "description": "Integrated into ChatGPT, understands nuanced prompts for high-quality images.",
+    "icon": "🖼️",
+    "url": "https://openai.com/dall-e-3",
+    "pricing": "paid",
+    "rating": 9.0,
+    "category": "AI Image",
+    "tags": [
+      "AI",
+      "Image",
+      "Generation",
+      "GPT-4"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Suno",
+    "slug": "suno",
+    "tagline": "AI music generation",
+    "description": "Generate full songs from text — lyrics, vocals, instruments, production.",
+    "icon": "🎵",
+    "url": "https://suno.com",
+    "pricing": "freemium",
+    "rating": 8.9,
+    "category": "AI Audio",
+    "tags": [
+      "AI",
+      "Audio",
+      "Music",
+      "Generation"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Hugging Face",
+    "slug": "hugging-face",
+    "tagline": "Largest AI model community",
+    "description": "Platform for hosting, sharing, and using open-source AI models and datasets.",
+    "icon": "🤗",
+    "url": "https://huggingface.co",
+    "pricing": "free",
+    "rating": 9.2,
+    "category": "AI Coding",
+    "tags": [
+      "AI",
+      "Open Source",
+      "Community",
+      "Models"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Stable Diffusion",
+    "slug": "stable-diffusion",
+    "tagline": "Open-source AI image generation",
+    "description": "Run locally, free. Massive community model ecosystem.",
+    "icon": "🌌",
+    "url": "https://stability.ai",
+    "pricing": "free",
+    "rating": 8.8,
+    "category": "AI Image",
+    "tags": [
+      "AI",
+      "Image",
+      "Open Source",
+      "Local"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Runway Gen-3",
+    "slug": "runway-gen3",
+    "tagline": "Professional AI video editing",
+    "description": "Text-to-video and video-to-video with cinema-quality output.",
+    "icon": "🎥",
+    "url": "https://runwayml.com",
+    "pricing": "paid",
+    "rating": 8.6,
+    "category": "AI Video",
+    "tags": [
+      "AI",
+      "Video",
+      "Edit",
+      "Creation"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sora",
+    "slug": "sora",
+    "tagline": "OpenAI's video generation model",
+    "description": "Generate up to 60 seconds of high-quality video from text.",
+    "icon": "🎬",
+    "url": "https://openai.com/sora",
+    "pricing": "paid",
+    "rating": 8.5,
+    "category": "AI Video",
+    "tags": [
+      "AI",
+      "Video",
+      "Generation",
+      "Multimodal"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Grammarly",
+    "slug": "grammarly",
+    "tagline": "AI writing assistant & grammar checker",
+    "description": "Real-time grammar correction, style suggestions, tone across all platforms.",
+    "icon": "✍️",
+    "url": "https://grammarly.com",
+    "pricing": "freemium",
+    "rating": 8.5,
+    "category": "AI Writing",
+    "tags": [
+      "AI",
+      "Writing",
+      "Grammar",
+      "Proofreading"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Gamma",
+    "slug": "gamma",
+    "tagline": "AI presentation generator",
+    "description": "Create beautiful presentations, documents from a single prompt.",
+    "icon": "📊",
+    "url": "https://gamma.app",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Productivity",
+    "tags": [
+      "AI",
+      "Productivity",
+      "Presentation",
+      "PPT"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Replit",
+    "slug": "replit",
+    "tagline": "AI-powered online IDE",
+    "description": "Browser-based development with AI assistance. Write, run, deploy from anywhere.",
+    "icon": "🔄",
+    "url": "https://replit.com",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Coding",
+    "tags": [
+      "AI",
+      "Coding",
+      "Online",
+      "IDE"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Otter.ai",
+    "slug": "otter",
+    "tagline": "AI meeting transcription & notes",
+    "description": "Real-time voice transcription, meeting summaries, action item extraction.",
+    "icon": "📞",
+    "url": "https://otter.ai",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Productivity",
+    "tags": [
+      "AI",
+      "Productivity",
+      "Meeting",
+      "Transcription"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Notion AI",
+    "slug": "notion-ai",
+    "tagline": "AI writing & knowledge management",
+    "description": "AI-powered writing integrated into Notion's notes, docs, databases.",
+    "icon": "📝",
+    "url": "https://notion.so",
+    "pricing": "paid",
+    "rating": 8.4,
+    "category": "AI Writing",
+    "tags": [
+      "AI",
+      "Writing",
+      "Productivity",
+      "Notes"
+    ]
+  }
+]

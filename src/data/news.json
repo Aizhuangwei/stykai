@@ -1,0 +1,26 @@
+[
+  {
+    "id": "n1",
+    "title": "Anthropic Enters Financial Services",
+    "description": "Claude's new compliance features target banking, insurance, and government sectors.",
+    "category": "Industry News",
+    "date": "Apr 22, 2026",
+    "readTime": "5 min"
+  },
+  {
+    "id": "n2",
+    "title": "GPT-5 Launch Expected Q3 2026",
+    "description": "OpenAI's next-gen model promises 10x improvements in reasoning and multimodal.",
+    "category": "Updates",
+    "date": "Apr 20, 2026",
+    "readTime": "3 min"
+  },
+  {
+    "id": "n3",
+    "title": "DeepSeek R2 Breaks Benchmarks",
+    "description": "The open-source Chinese model now leads several math and coding benchmarks.",
+    "category": "Research",
+    "date": "Apr 18, 2026",
+    "readTime": "4 min"
+  }
+]
