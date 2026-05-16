@@ -4,55 +4,55 @@
     "name": "AI Chat",
     "slug": "ai-chat",
     "icon": "💬",
-    "count": 3
+    "count": 8
   },
   {
     "id": "c2",
     "name": "AI Coding",
     "slug": "ai-coding",
     "icon": "💻",
-    "count": 5
+    "count": 26
   },
   {
     "id": "c3",
     "name": "AI Image",
     "slug": "ai-image",
     "icon": "🎨",
-    "count": 3
+    "count": 23
   },
   {
     "id": "c4",
     "name": "AI Video",
     "slug": "ai-video",
     "icon": "🎬",
-    "count": 2
+    "count": 11
   },
   {
     "id": "c5",
     "name": "AI Audio",
     "slug": "ai-audio",
     "icon": "🎵",
-    "count": 2
+    "count": 11
   },
   {
     "id": "c6",
     "name": "AI Writing",
     "slug": "ai-writing",
     "icon": "✍️",
-    "count": 2
+    "count": 14
   },
   {
     "id": "c7",
     "name": "AI Search",
     "slug": "ai-search",
     "icon": "🔍",
-    "count": 1
+    "count": 9
   },
   {
     "id": "c8",
     "name": "AI Productivity",
     "slug": "ai-productivity",
     "icon": "⚡",
-    "count": 2
+    "count": 34
   }
 ]

@@ -1,8 +1,10 @@
-
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { useLang } from "@/lib/i18n";
+import LangToggle from "@/components/LangToggle";
 
 export default function Header() {
+  const { t } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQ, setSearchQ] = useState("");
@@ -22,16 +24,17 @@ export default function Header() {
           <span className="text-lg font-bold text-gray-900">STYK<span className="text-indigo-600">Ai</span></span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="/" className="text-indigo-600">Home</a>
-          <a href="/categories" className="text-gray-500 hover:text-gray-900">Categories</a>
-          <a href="/search" className="text-gray-500 hover:text-gray-900">All Tools</a>
-          <a href="/submit" className="text-gray-500 hover:text-gray-900">Submit Tool</a>
+          <a href="/" className="text-indigo-600">{t("nav.home")}</a>
+          <a href="/categories" className="text-gray-500 hover:text-gray-900">{t("nav.categories")}</a>
+          <a href="/search" className="text-gray-500 hover:text-gray-900">{t("nav.allTools")}</a>
+          <a href="/submit" className="text-gray-500 hover:text-gray-900">{t("nav.submitTool")}</a>
         </nav>
         <div className="flex items-center gap-3">
+          <LangToggle />
           {searchOpen ? (
             <form onSubmit={e => { e.preventDefault(); if (searchQ.trim()) window.location.href = "/search?q=" + encodeURIComponent(searchQ.trim()); }}>
               <input ref={ref} value={searchQ} onChange={e => setSearchQ(e.target.value)}
-                placeholder="Search..." className="w-48 px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                placeholder={t("nav.search")} className="w-48 px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
                 autoFocus onBlur={() => { if (!searchQ) setSearchOpen(false); }} />
             </form>
           ) : (

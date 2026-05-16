@@ -7,8 +7,8 @@
     "rating": 9.6,
     "pricing": "freemium",
     "category": "AI Chat",
-    "badge": "#1 PICK",
-    "tagline": "World's most versatile AI assistant"
+    "tagline": "World's most versatile AI assistant",
+    "badge": "#1 PICK"
   },
   {
     "id": 2,
@@ -18,8 +18,19 @@
     "rating": 9.4,
     "pricing": "freemium",
     "category": "AI Chat",
-    "badge": "EDITOR'S CHOICE",
-    "tagline": "Long-form text expert"
+    "tagline": "Long-form text expert, safe & reliable",
+    "badge": "EDITOR'S CHOICE"
+  },
+  {
+    "id": 3,
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "icon": "🎨",
+    "rating": 9.4,
+    "pricing": "paid",
+    "category": "AI Image",
+    "tagline": "Top AI image generation with artistic style",
+    "badge": "BEST SELLER"
   },
   {
     "id": 4,
@@ -29,18 +40,7 @@
     "rating": 9.3,
     "pricing": "paid",
     "category": "AI Coding",
-    "badge": "BEST SELLER",
-    "tagline": "AI pair programmer"
-  },
-  {
-    "id": 5,
-    "name": "Cursor",
-    "slug": "cursor",
-    "icon": "🟩",
-    "rating": 9.2,
-    "pricing": "freemium",
-    "category": "AI Coding",
-    "badge": "HOT",
-    "tagline": "AI-native code editor"
+    "tagline": "Most popular AI programming assistant",
+    "badge": "HOT"
   }
 ]

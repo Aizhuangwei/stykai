@@ -4,17 +4,15 @@
     "name": "ChatGPT",
     "slug": "chatgpt",
     "tagline": "World's most versatile AI assistant",
-    "description": "ChatGPT by OpenAI — the #1 AI assistant for content, code, analysis, and more. Supports GPT-4o.",
+    "description": "World's most versatile AI assistant.",
     "icon": "🤖",
     "url": "https://chat.openai.com",
     "pricing": "freemium",
     "rating": 9.6,
     "category": "AI Chat",
     "tags": [
-      "AI",
-      "Chat",
-      "GPT-4",
-      "Multimodal"
+      "AI Chat",
+      "AI"
     ]
   },
   {
@@ -22,18 +20,15 @@
     "name": "Claude",
     "slug": "claude",
     "tagline": "Long-form text expert, safe & reliable",
-    "description": "Anthropic's Claude excels at long documents, code, and nuanced conversation. Best-in-class safety.",
+    "description": "Long-form text expert, safe & reliable.",
     "icon": "🟤",
     "url": "https://claude.ai",
     "pricing": "freemium",
     "rating": 9.4,
     "category": "AI Chat",
     "tags": [
-      "AI",
-      "Chat",
-      "Long Text",
-      "Code",
-      "Safety"
+      "AI Chat",
+      "AI"
     ]
   },
   {
@@ -41,17 +36,15 @@
     "name": "Midjourney",
     "slug": "midjourney",
     "tagline": "Top AI image generation with artistic style",
-    "description": "Midjourney is the premier AI image generation tool with stunning artistic quality.",
+    "description": "Top AI image generation with artistic style.",
     "icon": "🎨",
     "url": "https://midjourney.com",
     "pricing": "paid",
     "rating": 9.4,
     "category": "AI Image",
     "tags": [
-      "AI",
-      "Image",
-      "Art",
-      "Creation"
+      "AI Image",
+      "AI"
     ]
   },
   {
@@ -59,17 +52,15 @@
     "name": "GitHub Copilot",
     "slug": "github-copilot",
     "tagline": "Most popular AI programming assistant",
-    "description": "AI pair programmer integrating into VS Code, JetBrains. Real-time code suggestions.",
+    "description": "Most popular AI programming assistant.",
     "icon": "🤖",
     "url": "https://github.com/features/copilot",
     "pricing": "paid",
     "rating": 9.3,
     "category": "AI Coding",
     "tags": [
-      "AI",
-      "Coding",
-      "Programming",
-      "VS Code"
+      "AI Coding",
+      "AI"
     ]
   },
   {
@@ -77,17 +68,15 @@
     "name": "Cursor",
     "slug": "cursor",
     "tagline": "AI-native code editor",
-    "description": "VS Code fork with deep AI integration. Codebase-aware, one-click refactoring, agent mode.",
+    "description": "AI-native code editor.",
     "icon": "🟩",
     "url": "https://cursor.com",
     "pricing": "freemium",
     "rating": 9.2,
     "category": "AI Coding",
     "tags": [
-      "AI",
-      "Editor",
-      "Code",
-      "Refactor"
+      "AI Coding",
+      "AI"
     ]
   },
   {
@@ -95,17 +84,15 @@
     "name": "Perplexity",
     "slug": "perplexity",
     "tagline": "AI search engine with cited sources",
-    "description": "AI-powered search with real-time answers and source citations. Great for research.",
+    "description": "AI search engine with cited sources.",
     "icon": "🔍",
     "url": "https://perplexity.ai",
     "pricing": "freemium",
     "rating": 9.0,
     "category": "AI Search",
     "tags": [
-      "AI",
-      "Search",
-      "Research",
-      "Real-time"
+      "AI Search",
+      "AI"
     ]
   },
   {
@@ -113,17 +100,15 @@
     "name": "DeepSeek",
     "slug": "deepseek",
     "tagline": "Chinese AI with outstanding reasoning",
-    "description": "DeepSeek excels at mathematical reasoning and coding. Open-source models rival GPT-4.",
+    "description": "Chinese AI with outstanding reasoning.",
     "icon": "🧠",
     "url": "https://chat.deepseek.com",
     "pricing": "free",
     "rating": 9.0,
     "category": "AI Chat",
     "tags": [
-      "AI",
-      "Reasoning",
-      "Math",
-      "Coding"
+      "AI Chat",
+      "AI"
     ]
   },
   {
@@ -131,17 +116,15 @@
     "name": "ElevenLabs",
     "slug": "elevenlabs",
     "tagline": "Most realistic AI voice synthesis",
-    "description": "Industry-leading TTS with ultra-realistic voices, emotion control, multi-language.",
+    "description": "Most realistic AI voice synthesis.",
     "icon": "🔊",
     "url": "https://elevenlabs.io",
     "pricing": "freemium",
     "rating": 9.3,
     "category": "AI Audio",
     "tags": [
-      "AI",
-      "Audio",
-      "Voice",
-      "Synthesis"
+      "AI Audio",
+      "AI"
     ]
   },
   {
@@ -149,17 +132,15 @@
     "name": "Devin",
     "slug": "devin",
     "tagline": "First AI software engineer",
-    "description": "Cognition's Devin — the first fully autonomous AI software engineer.",
+    "description": "First AI software engineer.",
     "icon": "🦾",
     "url": "https://cognition.ai",
     "pricing": "paid",
     "rating": 9.0,
     "category": "AI Coding",
     "tags": [
-      "AI",
-      "Programming",
-      "Agent",
-      "Autonomous"
+      "AI Coding",
+      "AI"
     ]
   },
   {
@@ -167,17 +148,15 @@
     "name": "DALL-E 3",
     "slug": "dalle-3",
     "tagline": "OpenAI's text-to-image model",
-    "description": "Integrated into ChatGPT, understands nuanced prompts for high-quality images.",
+    "description": "OpenAI's text-to-image model.",
     "icon": "🖼️",
     "url": "https://openai.com/dall-e-3",
     "pricing": "paid",
     "rating": 9.0,
     "category": "AI Image",
     "tags": [
-      "AI",
-      "Image",
-      "Generation",
-      "GPT-4"
+      "AI Image",
+      "AI"
     ]
   },
   {
@@ -185,17 +164,15 @@
     "name": "Suno",
     "slug": "suno",
     "tagline": "AI music generation",
-    "description": "Generate full songs from text — lyrics, vocals, instruments, production.",
+    "description": "AI music generation.",
     "icon": "🎵",
     "url": "https://suno.com",
     "pricing": "freemium",
     "rating": 8.9,
     "category": "AI Audio",
     "tags": [
-      "AI",
-      "Audio",
-      "Music",
-      "Generation"
+      "AI Audio",
+      "AI"
     ]
   },
   {
@@ -203,17 +180,15 @@
     "name": "Hugging Face",
     "slug": "hugging-face",
     "tagline": "Largest AI model community",
-    "description": "Platform for hosting, sharing, and using open-source AI models and datasets.",
+    "description": "Largest AI model community.",
     "icon": "🤗",
     "url": "https://huggingface.co",
     "pricing": "free",
     "rating": 9.2,
     "category": "AI Coding",
     "tags": [
-      "AI",
-      "Open Source",
-      "Community",
-      "Models"
+      "AI Coding",
+      "AI"
     ]
   },
   {
@@ -221,17 +196,15 @@
     "name": "Stable Diffusion",
     "slug": "stable-diffusion",
     "tagline": "Open-source AI image generation",
-    "description": "Run locally, free. Massive community model ecosystem.",
+    "description": "Open-source AI image generation.",
     "icon": "🌌",
     "url": "https://stability.ai",
     "pricing": "free",
     "rating": 8.8,
     "category": "AI Image",
     "tags": [
-      "AI",
-      "Image",
-      "Open Source",
-      "Local"
+      "AI Image",
+      "AI"
     ]
   },
   {
@@ -239,17 +212,15 @@
     "name": "Runway Gen-3",
     "slug": "runway-gen3",
     "tagline": "Professional AI video editing",
-    "description": "Text-to-video and video-to-video with cinema-quality output.",
+    "description": "Professional AI video editing.",
     "icon": "🎥",
     "url": "https://runwayml.com",
     "pricing": "paid",
     "rating": 8.6,
     "category": "AI Video",
     "tags": [
-      "AI",
-      "Video",
-      "Edit",
-      "Creation"
+      "AI Video",
+      "AI"
     ]
   },
   {
@@ -257,17 +228,15 @@
     "name": "Sora",
     "slug": "sora",
     "tagline": "OpenAI's video generation model",
-    "description": "Generate up to 60 seconds of high-quality video from text.",
+    "description": "OpenAI's video generation model.",
     "icon": "🎬",
     "url": "https://openai.com/sora",
     "pricing": "paid",
     "rating": 8.5,
     "category": "AI Video",
     "tags": [
-      "AI",
-      "Video",
-      "Generation",
-      "Multimodal"
+      "AI Video",
+      "AI"
     ]
   },
   {
@@ -275,17 +244,15 @@
     "name": "Grammarly",
     "slug": "grammarly",
     "tagline": "AI writing assistant & grammar checker",
-    "description": "Real-time grammar correction, style suggestions, tone across all platforms.",
+    "description": "AI writing assistant & grammar checker.",
     "icon": "✍️",
     "url": "https://grammarly.com",
     "pricing": "freemium",
     "rating": 8.5,
     "category": "AI Writing",
     "tags": [
-      "AI",
-      "Writing",
-      "Grammar",
-      "Proofreading"
+      "AI Writing",
+      "AI"
     ]
   },
   {
@@ -293,17 +260,15 @@
     "name": "Gamma",
     "slug": "gamma",
     "tagline": "AI presentation generator",
-    "description": "Create beautiful presentations, documents from a single prompt.",
+    "description": "AI presentation generator.",
     "icon": "📊",
     "url": "https://gamma.app",
     "pricing": "freemium",
     "rating": 8.3,
     "category": "AI Productivity",
     "tags": [
-      "AI",
-      "Productivity",
-      "Presentation",
-      "PPT"
+      "AI Productivity",
+      "AI"
     ]
   },
   {
@@ -311,17 +276,15 @@
     "name": "Replit",
     "slug": "replit",
     "tagline": "AI-powered online IDE",
-    "description": "Browser-based development with AI assistance. Write, run, deploy from anywhere.",
+    "description": "AI-powered online IDE.",
     "icon": "🔄",
     "url": "https://replit.com",
     "pricing": "freemium",
     "rating": 8.2,
     "category": "AI Coding",
     "tags": [
-      "AI",
-      "Coding",
-      "Online",
-      "IDE"
+      "AI Coding",
+      "AI"
     ]
   },
   {
@@ -329,17 +292,15 @@
     "name": "Otter.ai",
     "slug": "otter",
     "tagline": "AI meeting transcription & notes",
-    "description": "Real-time voice transcription, meeting summaries, action item extraction.",
+    "description": "AI meeting transcription & notes.",
     "icon": "📞",
     "url": "https://otter.ai",
     "pricing": "freemium",
     "rating": 8.1,
     "category": "AI Productivity",
     "tags": [
-      "AI",
-      "Productivity",
-      "Meeting",
-      "Transcription"
+      "AI Productivity",
+      "AI"
     ]
   },
   {
@@ -347,17 +308,1846 @@
     "name": "Notion AI",
     "slug": "notion-ai",
     "tagline": "AI writing & knowledge management",
-    "description": "AI-powered writing integrated into Notion's notes, docs, databases.",
+    "description": "AI writing & knowledge management.",
     "icon": "📝",
     "url": "https://notion.so",
     "pricing": "paid",
     "rating": 8.4,
     "category": "AI Writing",
     "tags": [
-      "AI",
-      "Writing",
-      "Productivity",
-      "Notes"
+      "AI Writing",
+      "AI"
     ]
+  },
+  {
+    "id": 21,
+    "name": "Gemini",
+    "slug": "gemini",
+    "tagline": "Google's multimodal AI with 1M token context",
+    "description": "Google's multimodal AI with 1M token context.",
+    "icon": "🤖",
+    "url": "https://gemini.google.com",
+    "pricing": "free",
+    "rating": 9.1,
+    "category": "AI Chat",
+    "tags": [
+      "AI Chat",
+      "AI"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "CoPilot (Bing)",
+    "slug": "bing-copilot",
+    "tagline": "Microsoft's AI assistant integrated into Bing",
+    "description": "Microsoft's AI assistant integrated into Bing.",
+    "icon": "🟦",
+    "url": "https://bing.com/chat",
+    "pricing": "free",
+    "rating": 8.7,
+    "category": "AI Chat",
+    "tags": [
+      "AI Chat",
+      "AI"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Grok",
+    "slug": "grok",
+    "tagline": "xAI's witty real-time AI assistant",
+    "description": "xAI's witty real-time AI assistant.",
+    "icon": "🅧",
+    "url": "https://grok.com",
+    "pricing": "paid",
+    "rating": 8.6,
+    "category": "AI Chat",
+    "tags": [
+      "AI Chat",
+      "AI"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Qwen",
+    "slug": "qwen",
+    "tagline": "Alibaba's capable open-source LLM",
+    "description": "Alibaba's capable open-source LLM.",
+    "icon": "🐉",
+    "url": "https://tongyi.aliyun.com",
+    "pricing": "free",
+    "rating": 8.5,
+    "category": "AI Chat",
+    "tags": [
+      "AI Chat",
+      "AI"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Mistral",
+    "slug": "mistral",
+    "tagline": "Fast, efficient open-source LLMs",
+    "description": "Fast, efficient open-source LLMs.",
+    "icon": "🔥",
+    "url": "https://mistral.ai",
+    "pricing": "free",
+    "rating": 8.8,
+    "category": "AI Chat",
+    "tags": [
+      "AI Chat",
+      "AI"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Llama 3",
+    "slug": "llama-3",
+    "tagline": "Meta's open-source LLM family",
+    "description": "Meta's open-source LLM family.",
+    "icon": "🦙",
+    "url": "https://llama.meta.com",
+    "pricing": "free",
+    "rating": 9.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Codeium",
+    "slug": "codeium",
+    "tagline": "Free AI code completion alternative",
+    "description": "Free AI code completion alternative.",
+    "icon": "🦊",
+    "url": "https://codeium.com",
+    "pricing": "free",
+    "rating": 8.4,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "tagline": "AI code completion with privacy focus",
+    "description": "AI code completion with privacy focus.",
+    "icon": "🔮",
+    "url": "https://tabnine.com",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Amazon Q",
+    "slug": "amazon-q",
+    "tagline": "AWS-powered AI coding assistant",
+    "description": "AWS-powered AI coding assistant.",
+    "icon": "☁️",
+    "url": "https://aws.amazon.com/q",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Sourcegraph Cody",
+    "slug": "sourcegraph-cody",
+    "tagline": "Codebase-aware AI programming assistant",
+    "description": "Codebase-aware AI programming assistant.",
+    "icon": "🔍",
+    "url": "https://sourcegraph.com/cody",
+    "pricing": "freemium",
+    "rating": 8.9,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "CodeGemma",
+    "slug": "codegemma",
+    "tagline": "Google's code generation model",
+    "description": "Google's code generation model.",
+    "icon": "🟢",
+    "url": "https://ai.google.dev/codegemma",
+    "pricing": "free",
+    "rating": 8.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "V0 by Vercel",
+    "slug": "v0",
+    "tagline": "AI-powered UI component generator",
+    "description": "AI-powered UI component generator.",
+    "icon": "▲",
+    "url": "https://v0.dev",
+    "pricing": "freemium",
+    "rating": 9.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Bolt.new",
+    "slug": "bolt-new",
+    "tagline": "AI full-stack web app builder",
+    "description": "AI full-stack web app builder.",
+    "icon": "⚡",
+    "url": "https://bolt.new",
+    "pricing": "freemium",
+    "rating": 8.8,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Lovable",
+    "slug": "lovable",
+    "tagline": "AI that builds web apps from prompts",
+    "description": "AI that builds web apps from prompts.",
+    "icon": "💜",
+    "url": "https://lovable.dev",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Windsurf",
+    "slug": "windsurf",
+    "tagline": "AI-first IDE with agent mode",
+    "description": "AI-first IDE with agent mode.",
+    "icon": "🏄",
+    "url": "https://codeium.com/windsurf",
+    "pricing": "freemium",
+    "rating": 8.5,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Claude Code",
+    "slug": "claude-code",
+    "tagline": "Anthropic's terminal coding agent",
+    "description": "Anthropic's terminal coding agent.",
+    "icon": "🟤",
+    "url": "https://docs.anthropic.com",
+    "pricing": "paid",
+    "rating": 9.0,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "OpenAI Codex",
+    "slug": "openai-codex",
+    "tagline": "GPT-3 powered code generation",
+    "description": "GPT-3 powered code generation.",
+    "icon": "🧩",
+    "url": "https://openai.com",
+    "pricing": "paid",
+    "rating": 8.2,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Ideogram",
+    "slug": "ideogram",
+    "tagline": "AI image generation with text rendering",
+    "description": "AI image generation with text rendering.",
+    "icon": "🖌️",
+    "url": "https://ideogram.ai",
+    "pricing": "freemium",
+    "rating": 8.7,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Leonardo AI",
+    "slug": "leonardo-ai",
+    "tagline": "AI image generation for game assets",
+    "description": "AI image generation for game assets.",
+    "icon": "🎮",
+    "url": "https://leonardo.ai",
+    "pricing": "freemium",
+    "rating": 8.6,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Adobe Firefly",
+    "slug": "adobe-firefly",
+    "tagline": "Adobe's generative AI image model",
+    "description": "Adobe's generative AI image model.",
+    "icon": "🎯",
+    "url": "https://firefly.adobe.com",
+    "pricing": "freemium",
+    "rating": 8.5,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Canva AI",
+    "slug": "canva-ai",
+    "tagline": "AI-powered design platform",
+    "description": "AI-powered design platform.",
+    "icon": "🎨",
+    "url": "https://canva.com",
+    "pricing": "freemium",
+    "rating": 8.4,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Clipdrop",
+    "slug": "clipdrop",
+    "tagline": "AI image editing tools suite",
+    "description": "AI image editing tools suite.",
+    "icon": "📸",
+    "url": "https://clipdrop.co",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Krea AI",
+    "slug": "krea-ai",
+    "tagline": "Real-time AI image generation",
+    "description": "Real-time AI image generation.",
+    "icon": "✨",
+    "url": "https://krea.ai",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "ComfyUI",
+    "slug": "comfyui",
+    "tagline": "Node-based Stable Diffusion workflow",
+    "description": "Node-based Stable Diffusion workflow.",
+    "icon": "🔗",
+    "url": "https://comfyui.org",
+    "pricing": "free",
+    "rating": 8.8,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Flux",
+    "slug": "flux",
+    "tagline": "Black Forest Lab's fast image model",
+    "description": "Black Forest Lab's fast image model.",
+    "icon": "🌊",
+    "url": "https://flux.ai",
+    "pricing": "free",
+    "rating": 8.7,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Pika",
+    "slug": "pika",
+    "tagline": "AI video creation platform",
+    "description": "AI video creation platform.",
+    "icon": "🟣",
+    "url": "https://pika.art",
+    "pricing": "freemium",
+    "rating": 8.4,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "HeyGen",
+    "slug": "heygen",
+    "tagline": "AI video avatar & lip-sync",
+    "description": "AI video avatar & lip-sync.",
+    "icon": "👤",
+    "url": "https://heygen.com",
+    "pricing": "paid",
+    "rating": 8.6,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Synthesia",
+    "slug": "synthesia",
+    "tagline": "AI video generation with virtual avatars",
+    "description": "AI video generation with virtual avatars.",
+    "icon": "🎭",
+    "url": "https://synthesia.io",
+    "pricing": "paid",
+    "rating": 8.5,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "InVideo",
+    "slug": "invideo",
+    "tagline": "AI video editing for marketers",
+    "description": "AI video editing for marketers.",
+    "icon": "🎬",
+    "url": "https://invideo.io",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Kapwing",
+    "slug": "kapwing",
+    "tagline": "Online AI video editor",
+    "description": "Online AI video editor.",
+    "icon": "✂️",
+    "url": "https://kapwing.com",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Descript",
+    "slug": "descript",
+    "tagline": "AI-powered audio/video editing",
+    "description": "AI-powered audio/video editing.",
+    "icon": "🎙️",
+    "url": "https://descript.com",
+    "pricing": "paid",
+    "rating": 8.7,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Veed.io",
+    "slug": "veed-io",
+    "tagline": "Online video editor with AI features",
+    "description": "Online video editor with AI features.",
+    "icon": "🎞️",
+    "url": "https://veed.io",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Pictory",
+    "slug": "pictory",
+    "tagline": "AI long content to short videos",
+    "description": "AI long content to short videos.",
+    "icon": "📹",
+    "url": "https://pictory.ai",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Opus Clip",
+    "slug": "opus-clip",
+    "tagline": "AI clip generator from long videos",
+    "description": "AI clip generator from long videos.",
+    "icon": "✂️",
+    "url": "https://opus.pro",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Video",
+    "tags": [
+      "AI Video",
+      "AI"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Murf AI",
+    "slug": "murf-ai",
+    "tagline": "AI voice generator for professionals",
+    "description": "AI voice generator for professionals.",
+    "icon": "🎤",
+    "url": "https://murf.ai",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Resemble AI",
+    "slug": "resemble-ai",
+    "tagline": "AI voice cloning & generation",
+    "description": "AI voice cloning & generation.",
+    "icon": "🔊",
+    "url": "https://resemble.ai",
+    "pricing": "paid",
+    "rating": 8.1,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Play.ht",
+    "slug": "play-ht",
+    "tagline": "AI text to voice with emotions",
+    "description": "AI text to voice with emotions.",
+    "icon": "🎧",
+    "url": "https://play.ht",
+    "pricing": "paid",
+    "rating": 8.2,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "WellSaid",
+    "slug": "wellsaid",
+    "tagline": "Enterprise AI voice generation",
+    "description": "Enterprise AI voice generation.",
+    "icon": "🏢",
+    "url": "https://wellsaidlabs.com",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Listnr",
+    "slug": "listnr",
+    "tagline": "AI text-to-speech with podcast voices",
+    "description": "AI text-to-speech with podcast voices.",
+    "icon": "📻",
+    "url": "https://listnr.ai",
+    "pricing": "freemium",
+    "rating": 7.8,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Soundraw",
+    "slug": "soundraw",
+    "tagline": "AI music generation for creators",
+    "description": "AI music generation for creators.",
+    "icon": "🎶",
+    "url": "https://soundraw.io",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "AIVA",
+    "slug": "aiva",
+    "tagline": "AI music composition for soundtracks",
+    "description": "AI music composition for soundtracks.",
+    "icon": "🎼",
+    "url": "https://aiva.ai",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Beatoven",
+    "slug": "beatoven",
+    "tagline": "AI music for videos and podcasts",
+    "description": "AI music for videos and podcasts.",
+    "icon": "🥁",
+    "url": "https://beatoven.ai",
+    "pricing": "freemium",
+    "rating": 7.8,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Jasper AI",
+    "slug": "jasper",
+    "tagline": "AI content writing for marketing",
+    "description": "AI content writing for marketing.",
+    "icon": "✍️",
+    "url": "https://jasper.ai",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Writesonic",
+    "slug": "writesonic",
+    "tagline": "AI writing assistant for SEO content",
+    "description": "AI writing assistant for SEO content.",
+    "icon": "📝",
+    "url": "https://writesonic.com",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Copy.ai",
+    "slug": "copy-ai",
+    "tagline": "AI copywriting for social & ads",
+    "description": "AI copywriting for social & ads.",
+    "icon": "📣",
+    "url": "https://copy.ai",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Rytr",
+    "slug": "rytr",
+    "tagline": "Affordable AI writing assistant",
+    "description": "Affordable AI writing assistant.",
+    "icon": "💸",
+    "url": "https://rytr.me",
+    "pricing": "freemium",
+    "rating": 7.9,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "ProWritingAid",
+    "slug": "prowritingaid",
+    "tagline": "AI grammar & style checker",
+    "description": "AI grammar & style checker.",
+    "icon": "📖",
+    "url": "https://prowritingaid.com",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Hemingway",
+    "slug": "hemingway",
+    "tagline": "AI writing clarity improvement",
+    "description": "AI writing clarity improvement.",
+    "icon": "📐",
+    "url": "https://hemingwayapp.com",
+    "pricing": "paid",
+    "rating": 7.8,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Sudowrite",
+    "slug": "sudowrite",
+    "tagline": "AI writing for fiction & storytelling",
+    "description": "AI writing for fiction & storytelling.",
+    "icon": "📚",
+    "url": "https://sudowrite.com",
+    "pricing": "paid",
+    "rating": 8.4,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Wordtune",
+    "slug": "wordtune",
+    "tagline": "AI rephraser & tone adjuster",
+    "description": "AI rephraser & tone adjuster.",
+    "icon": "🔄",
+    "url": "https://wordtune.com",
+    "pricing": "freemium",
+    "rating": 7.9,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "QuillBot",
+    "slug": "quillbot",
+    "tagline": "AI paraphrasing tool",
+    "description": "AI paraphrasing tool.",
+    "icon": "📝",
+    "url": "https://quillbot.com",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Clerk",
+    "slug": "clerk",
+    "tagline": "AI blog writing platform",
+    "description": "AI blog writing platform.",
+    "icon": "📰",
+    "url": "https://clerk.com",
+    "pricing": "freemium",
+    "rating": 7.5,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Bertha AI",
+    "slug": "bertha-ai",
+    "tagline": "AI copywriting for WordPress",
+    "description": "AI copywriting for WordPress.",
+    "icon": "📋",
+    "url": "https://bertha.ai",
+    "pricing": "paid",
+    "rating": 7.3,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Semrush AI",
+    "slug": "semrush-ai",
+    "tagline": "SEO + AI content writing",
+    "description": "SEO + AI content writing.",
+    "icon": "🔍",
+    "url": "https://semrush.com",
+    "pricing": "paid",
+    "rating": 8.1,
+    "category": "AI Writing",
+    "tags": [
+      "AI Writing",
+      "AI"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "You.com",
+    "slug": "you-com",
+    "tagline": "AI search engine with privacy",
+    "description": "AI search engine with privacy.",
+    "icon": "🟣",
+    "url": "https://you.com",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Consensus",
+    "slug": "consensus",
+    "tagline": "AI search for research papers",
+    "description": "AI search for research papers.",
+    "icon": "🎓",
+    "url": "https://consensus.app",
+    "pricing": "freemium",
+    "rating": 8.5,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Elicit",
+    "slug": "elicit",
+    "tagline": "AI research assistant",
+    "description": "AI research assistant.",
+    "icon": "🔬",
+    "url": "https://elicit.com",
+    "pricing": "freemium",
+    "rating": 8.8,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "SciSpace",
+    "slug": "scispace",
+    "tagline": "AI for scientific literature",
+    "description": "AI for scientific literature.",
+    "icon": "📐",
+    "url": "https://typeset.io",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Phind",
+    "slug": "phind",
+    "tagline": "AI search for developers",
+    "description": "AI search for developers.",
+    "icon": "💻",
+    "url": "https://phind.com",
+    "pricing": "free",
+    "rating": 8.4,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Devv",
+    "slug": "devv",
+    "tagline": "AI search engine for coders",
+    "description": "AI search engine for coders.",
+    "icon": "🔧",
+    "url": "https://devv.ai",
+    "pricing": "free",
+    "rating": 8.0,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "iAsk",
+    "slug": "iask",
+    "tagline": "Free AI question answering",
+    "description": "Free AI question answering.",
+    "icon": "❓",
+    "url": "https://iask.ai",
+    "pricing": "free",
+    "rating": 7.8,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Komodo",
+    "slug": "komodo",
+    "tagline": "AI search for product research",
+    "description": "AI search for product research.",
+    "icon": "🦎",
+    "url": "https://komodo.ai",
+    "pricing": "freemium",
+    "rating": 7.5,
+    "category": "AI Search",
+    "tags": [
+      "AI Search",
+      "AI"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Mem",
+    "slug": "mem",
+    "tagline": "AI-powered note-taking",
+    "description": "AI-powered note-taking.",
+    "icon": "🧠",
+    "url": "https://mem.ai",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Motion",
+    "slug": "motion",
+    "tagline": "AI project management & calendar",
+    "description": "AI project management & calendar.",
+    "icon": "📅",
+    "url": "https://usemotion.com",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Taskade",
+    "slug": "taskade",
+    "tagline": "AI task management & collaboration",
+    "description": "AI task management & collaboration.",
+    "icon": "📋",
+    "url": "https://taskade.com",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Krisp",
+    "slug": "krisp",
+    "tagline": "AI noise cancellation for calls",
+    "description": "AI noise cancellation for calls.",
+    "icon": "🔇",
+    "url": "https://krisp.ai",
+    "pricing": "freemium",
+    "rating": 8.4,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Fireflies",
+    "slug": "fireflies",
+    "tagline": "AI meeting assistant & transcription",
+    "description": "AI meeting assistant & transcription.",
+    "icon": "🤖",
+    "url": "https://fireflies.ai",
+    "pricing": "freemium",
+    "rating": 8.2,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Fathom",
+    "slug": "fathom",
+    "tagline": "AI meeting summarization",
+    "description": "AI meeting summarization.",
+    "icon": "📊",
+    "url": "https://fathom.video",
+    "pricing": "free",
+    "rating": 8.5,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Tldv",
+    "slug": "tldv",
+    "tagline": "AI video meeting highlights",
+    "description": "AI video meeting highlights.",
+    "icon": "🎥",
+    "url": "https://tldv.io",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Speechify",
+    "slug": "speechify",
+    "tagline": "AI text-to-speech reader",
+    "description": "AI text-to-speech reader.",
+    "icon": "📖",
+    "url": "https://speechify.com",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "SlidesAI",
+    "slug": "slides-ai",
+    "tagline": "AI presentation generator",
+    "description": "AI presentation generator.",
+    "icon": "📊",
+    "url": "https://slidesai.io",
+    "pricing": "freemium",
+    "rating": 7.9,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Beautiful.ai",
+    "slug": "beautiful-ai",
+    "tagline": "AI-powered slide designer",
+    "description": "AI-powered slide designer.",
+    "icon": "🎨",
+    "url": "https://beautiful.ai",
+    "pricing": "paid",
+    "rating": 8.1,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Eightify",
+    "slug": "eightify",
+    "tagline": "AI YouTube summary extension",
+    "description": "AI YouTube summary extension.",
+    "icon": "📌",
+    "url": "https://eightify.app",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Timely",
+    "slug": "timely",
+    "tagline": "AI time tracking automation",
+    "description": "AI time tracking automation.",
+    "icon": "⏰",
+    "url": "https://timelyapp.com",
+    "pricing": "paid",
+    "rating": 8.2,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Clockwise",
+    "slug": "clockwise",
+    "tagline": "AI calendar optimization",
+    "description": "AI calendar optimization.",
+    "icon": "🕐",
+    "url": "https://getclockwise.com",
+    "pricing": "freemium",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Lindy",
+    "slug": "lindy",
+    "tagline": "AI meeting & admin assistant",
+    "description": "AI meeting & admin assistant.",
+    "icon": "🎀",
+    "url": "https://lindy.ai",
+    "pricing": "paid",
+    "rating": 7.8,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Vapi",
+    "slug": "vapi",
+    "tagline": "AI voice agent platform",
+    "description": "AI voice agent platform.",
+    "icon": "📞",
+    "url": "https://vapi.ai",
+    "pricing": "paid",
+    "rating": 8.1,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Retool AI",
+    "slug": "retool-ai",
+    "tagline": "AI app builder for internal tools",
+    "description": "AI app builder for internal tools.",
+    "icon": "🔧",
+    "url": "https://retool.com/ai",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Bardeen",
+    "slug": "bardeen",
+    "tagline": "AI automation agent for repetitive tasks",
+    "description": "AI automation agent for repetitive tasks.",
+    "icon": "🤖",
+    "url": "https://bardeen.ai",
+    "pricing": "freemium",
+    "rating": 7.9,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Tome",
+    "slug": "tome",
+    "tagline": "AI storytelling & presentation",
+    "description": "AI storytelling & presentation.",
+    "icon": "📖",
+    "url": "https://tome.app",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "TLDR AI",
+    "slug": "tldr-ai",
+    "tagline": "AI newsletter curation",
+    "description": "AI newsletter curation.",
+    "icon": "📬",
+    "url": "https://tldr.tech",
+    "pricing": "free",
+    "rating": 7.5,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "CrewAI",
+    "slug": "crew-ai",
+    "tagline": "Multi-agent orchestration framework",
+    "description": "Multi-agent orchestration framework.",
+    "icon": "🧑‍🤝‍🧑",
+    "url": "https://crewai.com",
+    "pricing": "free",
+    "rating": 8.5,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "LangChain",
+    "slug": "langchain",
+    "tagline": "LLM application development framework",
+    "description": "LLM application development framework.",
+    "icon": "⛓️",
+    "url": "https://langchain.com",
+    "pricing": "free",
+    "rating": 8.9,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "LangGraph",
+    "slug": "langgraph",
+    "tagline": "Agent workflow orchestration",
+    "description": "Agent workflow orchestration.",
+    "icon": "🔀",
+    "url": "https://langchain.ai",
+    "pricing": "free",
+    "rating": 8.3,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "AutoGen",
+    "slug": "autogen",
+    "tagline": "Microsoft's multi-agent framework",
+    "description": "Microsoft's multi-agent framework.",
+    "icon": "🔄",
+    "url": "https://microsoft.com/autogen",
+    "pricing": "free",
+    "rating": 8.4,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Dify",
+    "slug": "dify",
+    "tagline": "Open-source LLM app platform",
+    "description": "Open-source LLM app platform.",
+    "icon": "🔧",
+    "url": "https://dify.ai",
+    "pricing": "free",
+    "rating": 8.5,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Flowise",
+    "slug": "flowise",
+    "tagline": "Low-code LLM app builder",
+    "description": "Low-code LLM app builder.",
+    "icon": "🔄",
+    "url": "https://flowiseai.com",
+    "pricing": "free",
+    "rating": 8.2,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "n8n",
+    "slug": "n8n",
+    "tagline": "AI workflow automation",
+    "description": "AI workflow automation.",
+    "icon": "🔗",
+    "url": "https://n8n.io",
+    "pricing": "freemium",
+    "rating": 8.4,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Zapier AI",
+    "slug": "zapier-ai",
+    "tagline": "AI automation across 5000+ apps",
+    "description": "AI automation across 5000+ apps.",
+    "icon": "🤖",
+    "url": "https://zapier.com",
+    "pricing": "paid",
+    "rating": 8.3,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Make (Integromat)",
+    "slug": "make",
+    "tagline": "AI-powered visual automation",
+    "description": "AI-powered visual automation.",
+    "icon": "🔗",
+    "url": "https://make.com",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Luma AI",
+    "slug": "luma-ai",
+    "tagline": "AI 3D capture & generation",
+    "description": "AI 3D capture & generation.",
+    "icon": "📷",
+    "url": "https://lumalabs.ai",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Meshy",
+    "slug": "meshy",
+    "tagline": "AI 3D model generation",
+    "description": "AI 3D model generation.",
+    "icon": "🧊",
+    "url": "https://meshy.ai",
+    "pricing": "freemium",
+    "rating": 7.9,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Scenario",
+    "slug": "scenario",
+    "tagline": "AI game asset generation",
+    "description": "AI game asset generation.",
+    "icon": "🎮",
+    "url": "https://scenario.gg",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "LeiaPix",
+    "slug": "leiapix",
+    "tagline": "AI 2D to 3D image converter",
+    "description": "AI 2D to 3D image converter.",
+    "icon": "📐",
+    "url": "https://leiapix.com",
+    "pricing": "free",
+    "rating": 7.8,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Remove.bg",
+    "slug": "remove-bg",
+    "tagline": "AI background removal",
+    "description": "AI background removal.",
+    "icon": "✂️",
+    "url": "https://remove.bg",
+    "pricing": "freemium",
+    "rating": 8.6,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Upscale.media",
+    "slug": "upscale-media",
+    "tagline": "AI image upscaling",
+    "description": "AI image upscaling.",
+    "icon": "🔍",
+    "url": "https://upscale.media",
+    "pricing": "freemium",
+    "rating": 8.1,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Topaz Labs",
+    "slug": "topaz-labs",
+    "tagline": "AI image & video enhancement",
+    "description": "AI image & video enhancement.",
+    "icon": "🔮",
+    "url": "https://topazlabs.com",
+    "pricing": "paid",
+    "rating": 8.5,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Cleanup.pictures",
+    "slug": "cleanup-pictures",
+    "tagline": "AI object removal from images",
+    "description": "AI object removal from images.",
+    "icon": "🧹",
+    "url": "https://cleanup.pictures",
+    "pricing": "freemium",
+    "rating": 8.3,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Magic Eraser",
+    "slug": "magic-eraser",
+    "tagline": "AI image object removal",
+    "description": "AI image object removal.",
+    "icon": "🧽",
+    "url": "https://magiceraser.com",
+    "pricing": "free",
+    "rating": 7.9,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Notion Calendar",
+    "slug": "notion-calendar",
+    "tagline": "AI calendar with Notion integration",
+    "description": "AI calendar with Notion integration.",
+    "icon": "📅",
+    "url": "https://notion.com",
+    "pricing": "free",
+    "rating": 7.5,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Readwise Reader",
+    "slug": "readwise-reader",
+    "tagline": "AI reading & highlights app",
+    "description": "AI reading & highlights app.",
+    "icon": "📑",
+    "url": "https://readwise.io",
+    "pricing": "paid",
+    "rating": 8.2,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Reflect",
+    "slug": "reflect",
+    "tagline": "AI note-taking with GPT-4",
+    "description": "AI note-taking with GPT-4.",
+    "icon": "📝",
+    "url": "https://reflect.app",
+    "pricing": "paid",
+    "rating": 7.9,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Durable",
+    "slug": "durable",
+    "tagline": "AI website builder for small biz",
+    "description": "AI website builder for small biz.",
+    "icon": "🌐",
+    "url": "https://durable.co",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Framer AI",
+    "slug": "framer-ai",
+    "tagline": "AI-powered website builder",
+    "description": "AI-powered website builder.",
+    "icon": "🎨",
+    "url": "https://framer.com",
+    "pricing": "freemium",
+    "rating": 8.4,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Uizard",
+    "slug": "uizard",
+    "tagline": "AI design tool for wireframes",
+    "description": "AI design tool for wireframes.",
+    "icon": "🦎",
+    "url": "https://uizard.io",
+    "pricing": "freemium",
+    "rating": 7.8,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Galileo AI",
+    "slug": "galileo-ai",
+    "tagline": "AI generation UI designs",
+    "description": "AI generation UI designs.",
+    "icon": "🎨",
+    "url": "https://galileo.ai",
+    "pricing": "paid",
+    "rating": 8.0,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Visily",
+    "slug": "visily",
+    "tagline": "AI wireframing & prototyping",
+    "description": "AI wireframing & prototyping.",
+    "icon": "📐",
+    "url": "https://visily.ai",
+    "pricing": "freemium",
+    "rating": 7.7,
+    "category": "AI Image",
+    "tags": [
+      "AI Image",
+      "AI"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "OpenHuman",
+    "slug": "openhuman",
+    "tagline": "Your personal AI super intelligence, private & powerful",
+    "description": "Open-source personal AI built in Rust. Private, local-first, and extremely powerful. Top trending on GitHub with 9,252 stars.",
+    "icon": "🧠",
+    "url": "https://github.com/tinyhumansai/openhuman",
+    "pricing": "free",
+    "rating": 8.8,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ],
+    "new": true
+  },
+  {
+    "id": 131,
+    "name": "Supertonic",
+    "slug": "supertonic",
+    "tagline": "Lightning-fast on-device multilingual TTS",
+    "description": "On-device multilingual text-to-speech running natively via ONNX. Ultra-low latency, privacy-friendly, supports multiple languages.",
+    "icon": "🎤",
+    "url": "https://github.com/supertone-inc/supertonic",
+    "pricing": "free",
+    "rating": 8.5,
+    "category": "AI Audio",
+    "tags": [
+      "AI Audio",
+      "AI"
+    ],
+    "new": true
+  },
+  {
+    "id": 132,
+    "name": "n8n MCP",
+    "slug": "n8n-mcp",
+    "tagline": "Build n8n workflows via AI agents",
+    "description": "MCP server for Claude/Cursor/Windsurf to build n8n workflows. Automate complex workflows through natural language. 20,937 GitHub stars.",
+    "icon": "🔧",
+    "url": "https://github.com/czlonkowski/n8n-mcp",
+    "pricing": "free",
+    "rating": 8.6,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ],
+    "new": true
+  },
+  {
+    "id": 133,
+    "name": "CloakBrowser",
+    "slug": "cloatkbrowser",
+    "tagline": "Stealth Chromium that passes every bot test",
+    "description": "Drop-in Playwright replacement with source-level fingerprint patches. Passes all 30/30 anti-bot tests. Free self-hosted Multilogin alternative.",
+    "icon": "🕵️",
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "pricing": "free",
+    "rating": 8.7,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "Dev Tools"
+    ],
+    "new": true
+  },
+  {
+    "id": 134,
+    "name": "RuView",
+    "slug": "ruview",
+    "tagline": "WiFi-based spatial intelligence without cameras",
+    "description": "Turn WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection. No cameras needed. 57,623 GitHub stars.",
+    "icon": "📡",
+    "url": "https://github.com/ruvnet/RuView",
+    "pricing": "free",
+    "rating": 9.2,
+    "category": "AI Productivity",
+    "tags": [
+      "AI",
+      "AI Computer Vision"
+    ],
+    "new": true
+  },
+  {
+    "id": 135,
+    "name": "Qiaomu",
+    "slug": "qiaomu-notebooklm",
+    "tagline": "Multi-source content processor for NotebookLM",
+    "description": "Claude Skill for processing WeChat articles, web pages, YouTube, PDF, Markdown into NotebookLM-ready formats. Supports Podcast, PPT, MindMap, Quiz generation.",
+    "icon": "📝",
+    "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+    "pricing": "free",
+    "rating": 8.0,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "AI"
+    ],
+    "new": true
+  },
+  {
+    "id": 136,
+    "name": "Agent Skills",
+    "slug": "agent-skills",
+    "tagline": "Production-grade skills for AI coding agents",
+    "description": "Skills framework by Matt Pocock for real engineers. Straight from .claude directory — prompt patterns for Claude Code, Cursor, and Windsurf. 85,279 stars.",
+    "icon": "🧩",
+    "url": "https://github.com/mattpocock/skills",
+    "pricing": "free",
+    "rating": 8.9,
+    "category": "AI Coding",
+    "tags": [
+      "AI Coding",
+      "AI"
+    ],
+    "new": true
   }
 ]
