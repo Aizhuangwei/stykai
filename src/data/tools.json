@@ -2149,5 +2149,23 @@
       "AI"
     ],
     "new": true
+  },
+  {
+    "id": 137,
+    "name": "Remio",
+    "slug": "remio",
+    "tagline": "Local-first AI memory and personal knowledge base",
+    "description": "Local-first AI memory and knowledge base desktop app that parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors for focused personal context retrieval.",
+    "icon": "🧠",
+    "url": "https://remio.ai/",
+    "pricing": "freemium",
+    "rating": 8.8,
+    "category": "AI Productivity",
+    "tags": [
+      "AI Productivity",
+      "Knowledge Base",
+      "AI Memory"
+    ],
+    "new": true
   }
 ]
